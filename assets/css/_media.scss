@@ -1,50 +1,56 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-}
+  .order-sm-2 {
+    order: 2 !important;
+  }
+  .order-sm-1 {
+    order: 1 !important;
+  }
+  .sec-header {
+    .logo-mobile {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  .sec-1-banner {
+    .input-group {
+      .one {
+        width: 20% !important;
+      }
+      .two {
+        width: 50% !important;
+      }
+      .search-img {
+        width: 20px !important;
+      }
+    }
+    .p-abs-1 {
+      left: 5%;
+      right: 5%;
+      transform: translate(0, 0);
+    }
+    .p-abs-2 {
+      a {
+        font-size: 18px;
+        padding: 10px;
+      }
+    }
+  }
+
+  .sec-manage-business {
+    .input-group {
+      width: 100%;
+    }
+  }
+  .sec-footer {
+    .input-group {
+      width: 100%;
+    }
+  }
+} 
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-    .sec-header{
-        .logo-mobile{
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-    }
-    .sec-1-banner {
-        .input-group {
-            .one {
-                width: 20% !important;
-            }
-            .two { 
-                width: 50% !important;
-            }
-            .search-img {
-                width: 20px !important;
-            }
-        }
-        .p-abs-1 {
-            left: 5%;
-            right: 5%;
-            transform: translate(0, 0);
-        }
-        .p-abs-2 {
-            a {
-                font-size: 18px;
-                padding: 10px;
-            }
-        }
-    }
-
-    .sec-manage-business {
-        .input-group {
-            width: 100%;
-        }
-    }
-    .sec-footer {
-        .input-group {
-            width: 100%;
-        }
-    }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -53,16 +59,52 @@
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
+  .sec-footer {
+    .border-roght- {
+      border-right: 0px !important;
+    }
+  }
+  .sec-manage-business .input-group {
+    width: 300px;
+  }
+  .explore-business{
+      h1{
+          font-size: 22px;
+      }
+      p{
+          font-size: 15px;
+      }
+  }
+
 }
 
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
 }
 
+//
+//
+//
+//
+// Large devices (desktops, 992px and up)
+@media (min-width: 768px) {
+  .px-md-sec {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .order-sm-2 {
+    order: 1 !important;
+  }
+  .order-sm-1 {
+    order: 2 !important;
+  }
+}
+
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    .px-md-sec {
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
+  .px-md-sec {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }

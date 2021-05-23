@@ -2,38 +2,39 @@
 @import "header";
 @import "footer";
 @import "about";
-@import "index"; 
+@import "index";
 @import "media";
 
 body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .td-none {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .fs20 {
-    font-size: 20px !important;
+  font-size: 20px !important;
 }
 
 .mt-sec {
-    margin-top: 3rem !important;
+  margin-top: 3rem !important;
 }
 
 .border-sec {
-    border: 1px solid $crlSec !important;
+  border: 1px solid $crlSec !important;
 }
 
 .visibility-hidden {
-    visibility: hidden;
+  visibility: hidden;
+}
+
+.pt9px {
+  padding-top: 9px;
+}
+
+.h40px {
+  height: 40px !important;
 }
 
 
-.pt9px{
-    padding-top: 9px;
-}
-
-.h40px{
-    height: 40px !important;
-}
