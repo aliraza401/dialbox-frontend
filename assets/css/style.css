@@ -255,19 +255,15 @@
   font-size: 14px;
 }
 
-.sec-1-banner .back_img_1 {
+.sec-1-banner .back_img {
   height: 600px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.sec-1-banner .rel-banner {
-  position: absolute !important;
-  top: 8% !important;
-  left: 10% !important;
-  right: 10% !important;
-  bottom: 25% !important;
+.sec-1-banner .swiper-scrollbar {
+  display: none;
 }
 
 .sec-1-banner .swiper-pagination-bullet {
@@ -285,12 +281,11 @@
 
 .sec-1-banner .p-rel {
   position: relative;
-  overflow: hidden;
 }
 
 .sec-1-banner .p-abs-1 {
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 50%;
   -webkit-transform: translate(-50%, 10px);
           transform: translate(-50%, 10px);
@@ -306,35 +301,28 @@
   z-index: 5555;
 }
 
+.sec-1-banner .search-input .igt1 {
+  padding-right: 0px !important;
+}
+
+.sec-1-banner .search-input .igt1 img {
+  width: 20px;
+  border-right: 0px solid #eeeeee !important;
+  background-color: #eeeeee;
+}
+
 .sec-1-banner .search-input .one {
-  width: 130px;
-  background: #eeeeee url(./../img/map_pin.png) left no-repeat;
-  /*Your Image Link*/
-  background-size: contain;
-  background-origin: content-box;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 3px;
-}
-
-.sec-1-banner .search-input .one::-webkit-input-placeholder {
-  padding-left: 30px;
-}
-
-.sec-1-banner .search-input .one:-ms-input-placeholder {
-  padding-left: 30px;
-}
-
-.sec-1-banner .search-input .one::-ms-input-placeholder {
-  padding-left: 30px;
-}
-
-.sec-1-banner .search-input .one::placeholder {
-  padding-left: 30px;
+  width: 120px;
+  border-left: 0px solid #eeeeee !important;
+  background-color: #eeeeee;
+  -webkit-box-shadow: inset 0 -1px 0 #ddd;
+          box-shadow: inset 0 -1px 0 #ddd;
 }
 
 .sec-1-banner .search-input .two {
   width: 320px;
+  -webkit-box-shadow: inset 0 -1px 0 #ddd;
+          box-shadow: inset 0 -1px 0 #ddd;
 }
 
 .sec-1-banner .search-input .search-img {
@@ -491,8 +479,8 @@
     width: 20px !important;
   }
   .sec-1-banner .p-abs-1 {
-    left: 5%;
-    right: 5%;
+    left: 5% !important;
+    right: 5% !important;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -508,7 +496,7 @@
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 991.98px) {
   .sec-footer .border-roght- {
     border-right: 0px !important;
   }
@@ -520,6 +508,25 @@
   }
   .explore-business p {
     font-size: 15px;
+  }
+  .sec-header .logo-mobile {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .sec-1-banner .input-group .one {
+    width: 20% !important;
+  }
+  .sec-1-banner .input-group .two {
+    width: 50% !important;
+  }
+  .sec-1-banner .input-group .search-img {
+    width: 20px !important;
+  }
+  .sec-1-banner .p-abs-1 {
+    left: 15%;
+    right: 15%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
@@ -544,6 +551,12 @@
   .px-md-sec {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .sec-1-banner .back_img {
+    height: 900px !important;
   }
 }
 
