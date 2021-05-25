@@ -3,6 +3,7 @@
 @import "footer";
 @import "about";
 @import "index";
+@import "discussion";
 @import "media";
 
 body {
@@ -37,4 +38,10 @@ body {
   height: 40px !important;
 }
 
+.fw-500 {
+  font-weight: 500 !important;
+}
 
+.fw-600 {
+  font-weight: 600 !important;
+}

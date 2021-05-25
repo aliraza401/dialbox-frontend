@@ -188,3 +188,33 @@ $crlSec: #a32e2e;
 ::-webkit-scrollbar-thumb:hover {
   background: $clrPri;
 }
+
+
+
+
+
+
+
+.sec-header-two{
+  .input-group{
+    width: 400px !important;
+    input{
+      border-color: white !important;
+    }
+  }
+  .header-face-img{
+    width: 55px !important;
+    height: 55px !important;
+    border: 3px solid white;
+    border-radius: 10px;
+  }
+  .rigt-icons svg {
+    margin-right: 10px;
+  }
+  .input-group > *{
+    border-radius: 0px !important;
+  }
+  .img-new-pin{
+    width: 25px !important;
+  }
+}
