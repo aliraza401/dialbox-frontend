@@ -3,21 +3,30 @@ $crlSec: #a32e2e;
 
 .sec-header {
   z-index: 99999;
+*{
+  font-size: 16px !important; 
+}
+
+
   .header-logo {
     width: 150px !important;
   }
 
+  .rounded {
+    border-radius: 14px !important;
+  }
+ 
   .lang-btn-header {
     height: 100%;
   }
 
   .btn-outline-primary:hover {
-    color: #0d6efd;
+    color: $crlSec;
     background-color: #fff;
   }
 
   .nav-item a:hover {
-    color: $clrPri !important;
+    color: $crlSec !important;
   }
 
   .nav-right > * {
@@ -72,42 +81,45 @@ $crlSec: #a32e2e;
     width: 35px !important;
   }
 
+  .indus_link {
+    display: flex !important;
+    align-items: center;
+  }
+
+  .inustries-scroll {
+    height: 220px;
+    overflow-y: scroll;
+  }
+
+  .back_img_industry {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 7px;
+  }
+
   .DDropdownMenu {
     width: 700px;
-    top: 123%;
+    top: 119%;
     overflow: hidden;
     padding: 0px;
     border-color: rgb(192, 192, 192);
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-    .back_img {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 400px;
-      position: relative;
-    }
-    .p-abs {
-      position: absolute;
-      bottom: 5%;
-      left: 10%;
-      right: 10%;
-      h2,
-      a {
-        color: white !important;
-        font-weight: 600;
-      }
-    }
+    padding-bottom: 5px !important;
 
     a {
       display: block;
       text-decoration: none;
-      color: black;
+      color: black; 
+      margin-bottom: 10px;
     }
     .inner-row {
       padding: 20px;
     }
+  }
+
+  .border-color-pri {
+    border-width: 2px;
   }
 
   .nav-item::after {
@@ -162,7 +174,7 @@ $crlSec: #a32e2e;
   }
   .sidenav a {
     font-size: 18px;
-  } 
+  }
 }
 
 // Sidebar
@@ -188,33 +200,49 @@ $crlSec: #a32e2e;
 ::-webkit-scrollbar-thumb:hover {
   background: $clrPri;
 }
-
-
-
-
-
-
-
-.sec-header-two{
-  .input-group{
-    width: 400px !important;
-    input{
+ 
+.sec-header-two {
+  .header-logo-white{
+    width: 130px;
+  }
+  .input-group {
+    width: 480px !important;
+    input {
       border-color: white !important;
     }
   }
-  .header-face-img{
-    width: 55px !important;
-    height: 55px !important;
+  .header-face-img {
+    width: 50px !important;
+    height: 50px !important;
     border: 3px solid white;
     border-radius: 10px;
   }
   .rigt-icons svg {
     margin-right: 10px;
   }
-  .input-group > *{
+  .input-group > * {
     border-radius: 0px !important;
   }
-  .img-new-pin{
+  .img-new-pin {
     width: 25px !important;
   }
+  .p-rel{
+    position: relative !important;
+  }
+  .count{
+    position: absolute !important;
+    top: -30%;
+    left: 35%;
+    background-color: $crlSec;
+    padding: 0px 6px;
+    border-radius: 50%;
+    font-size: 13px !important;
+    color: white;
+  }
+  .rigt-icons{
+    svg{
+      margin-right: 20px;
+    }
+  }
+
 }

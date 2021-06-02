@@ -36,7 +36,7 @@
       }
     }
   }
- 
+
   .sec-manage-business {
     .input-group {
       width: 100%;
@@ -47,6 +47,27 @@
       width: 100%;
     }
   }
+
+  .main-sec-discussion-form {
+    .view_post_likes_section {
+      margin-top: 15px !important;
+    }
+    .view_post_likes_section * {
+      font-size: 13px !important;
+    }
+    .two .main-card {
+      padding: 10px !important;
+    }
+  }
+
+  .sec-one-bus_profile .p-abs-2 {
+    left: 20% !important;
+  }
+
+  .sec-main-business-profile .sec-prod .mini-card .back_img {
+    height: 250px !important;
+  }
+
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -71,11 +92,11 @@
       font-size: 15px;
     }
   }
-  .sec-header{
-      .logo-mobile{
-          padding-top: 10px;
-          padding-bottom: 10px;
-      }
+  .sec-header {
+    .logo-mobile {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
   .sec-1-banner {
     .input-group {
@@ -95,6 +116,18 @@
       transform: translate(0, 0);
     }
   }
+
+  .sec-one-bus_profile {
+    .p-abs-2 {
+      left: 60% ;
+    }
+  }
+  .sec-main-business-profile .two .d-1 {
+    padding: 15px !important;
+  }
+  .sec-main-business-profile .sec-prod .mini-card .back_img {
+    height: 200px;
+  }
 }
 
 // Large devices (desktops, less than 1200px)
@@ -103,7 +136,6 @@
 
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
-
 }
 
 //
@@ -123,21 +155,53 @@
   .order-sm-1 {
     order: 2 !important;
   }
+
+  .main-sec-discussion-form {
+    .col-md-3 {
+      width: 22% !important;
+    }
+    .col-md-6 {
+      width: 56% !important;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 950px;
+  }
   .px-md-sec {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+  .display-4 {
+    font-size: 3rem;
+  }
 }
 
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1170px !important;
+  }
+  .sec-home-products {
+    .back_img {
+      height: 350px !important;
+    }
+  }
+}
 
 @media (min-width: 1800px) {
-    .sec-1-banner{
-        .back_img{
-            height: 900px !important;
-        }
+  .sec-1-banner {
+    .back_img {
+      height: 900px !important;
     }
+  }
 }
