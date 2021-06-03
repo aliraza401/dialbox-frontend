@@ -715,6 +715,7 @@ $crlSec: #a32e2e;
 
     .mini-card {
       border-width: 2px !important;
+      position: relative;
       .back_img {
         height: 250px;
         background-position: center;
@@ -730,6 +731,22 @@ $crlSec: #a32e2e;
       }
       .lead {
         font-size: 18px !important;
+      }
+      .dropdown {
+        position: absolute;
+        top: 5px;
+        right: -2px;
+        svg {
+          filter: invert(0.7);
+        }
+        .dropdown-menu {
+          width: 50px !important;
+          max-width: 50px !important;
+          min-width: 76px !important;
+          inset: unset !important;
+          right: 5px !important;
+          top: 0 !important;
+        }
       }
     }
   }
@@ -756,8 +773,53 @@ $crlSec: #a32e2e;
       padding-top: 2rem !important;
       padding-bottom: 2rem !important;
       background-color: #f5f5f5 !important;
+      position: relative;
       h3 {
         font-size: 26px !important;
+      }
+      .dropdown {
+        position: absolute;
+        top: 5px;
+        right: -2px;
+        svg {
+          filter: invert(0.7);
+        }
+        .dropdown-menu {
+          width: 50px !important;
+          max-width: 50px !important;
+          min-width: 76px !important;
+          inset: unset !important;
+          right: 5px !important;
+          top: 0 !important;
+        }
+      }
+    }
+  }
+
+
+  .sec-faqs {
+    h3 {
+      margin-bottom: 2rem !important;
+      &::after {
+        content: " ";
+        display: block;
+        background-color: $crlSec;
+        width: 100px;
+        border: 2px solid $crlSec;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      }
+    }
+    margin-bottom: 2rem !important;
+
+    .mini-card {
+      margin-bottom: 1.5rem !important;
+      h5{
+        font-style: 18px !important;
       }
     }
   }
@@ -896,7 +958,7 @@ body {
   cursor: pointer;
 }
 
-.m-auto{
+.m-auto {
   margin: auto !important;
 }
 
@@ -925,13 +987,12 @@ body {
       width: 160px;
     }
   }
-  .social-img{
+  .social-img {
     width: 30px !important;
   }
-  label{
+  label {
     font-size: 14px !important;
   }
-
 }
 
 //

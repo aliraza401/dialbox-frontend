@@ -13,7 +13,7 @@ $(".product-swiper-threee").slick({
   dots: false, 
   infinite: true,
   slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToScroll: 1,
   prevArrow: `<img src="assets/img/arrrow-l.png" class="arrow-abs-left" >`,
   nextArrow: `<img src="assets/img/arrrow-r.png" class="arrow-abs-right" >`,
   responsive: [
@@ -21,7 +21,7 @@ $(".product-swiper-threee").slick({
       breakpoint: 769,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
       },
     },
     {
@@ -42,7 +42,7 @@ $(".product-swiper-five").slick({
   dots: false, 
   infinite: true,
   slidesToShow: 5,
-  slidesToScroll: 5,
+  slidesToScroll: 1,
   prevArrow: `<img src="assets/img/arrrow-l.png" class="arrow-abs-left" >`,
   nextArrow: `<img src="assets/img/arrrow-r.png" class="arrow-abs-right" >`,
   responsive: [
@@ -50,7 +50,7 @@ $(".product-swiper-five").slick({
       breakpoint: 769,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
       },
     },
     {
