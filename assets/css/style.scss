@@ -62,7 +62,7 @@ $crlSec: #a32e2e;
   }
   .p-abs-1 {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, 10px);
     z-index: 5555;
@@ -261,7 +261,7 @@ $crlSec: #a32e2e;
   background-repeat: no-repeat;
   background-position: center;
 
-  h1 {
+  h2 {
     &::after {
       content: " ";
       display: block;
@@ -282,7 +282,7 @@ $crlSec: #a32e2e;
   background-image: linear-gradient(to bottom, #77a4c5, white);
   overflow: hidden !important;
 
-  h1 {
+  h2 {
     &::after {
       content: " ";
       display: block;
@@ -302,31 +302,9 @@ $crlSec: #a32e2e;
   .p-rel {
     position: relative !important;
   }
-
-  .swiper-button-prev-unique {
-    position: absolute;
-    top: 52%;
-    transform: translate(0, -100%);
-    left: -2%;
-    z-index: 9999;
-    background-color: #f5e5e8;
-    padding: 3px;
-    border-radius: 50%;
-  }
-  .swiper-button-next-unique {
-    position: absolute;
-    top: 52%;
-    right: -2%;
-    transform: translate(0, -100%);
-    z-index: 9999;
-    background-color: #f5e5e8;
-    padding: 3px;
-    border-radius: 50%;
-  }
-
   .mini-card {
     .back_img {
-      height: 280px;
+      height: 240px !important;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -352,9 +330,7 @@ $crlSec: #a32e2e;
   .play-img {
     width: 150px;
   }
-  .moile-app-img {
-    width: 330px;
-  }
+
   .text-left {
     text-align: right;
   }
@@ -603,11 +579,11 @@ $crlSec: #a32e2e;
 //
 //
 
-.sec-one-bus_profile { 
+.sec-one-bus_profile {
   overflow: hidden !important;
   .main_back_img {
-    height: 450px !important;
-    background-position: center; 
+    height: 380px !important;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -622,9 +598,9 @@ $crlSec: #a32e2e;
     right: 0;
     bottom: 0;
     background: rgba(39, 39, 39, 0.7) !important;
-    .img-cover{
-      width: 45px;
-      height: 45px;
+    .img-cover {
+      width: 40px;
+      height: 40px;
       background-color: white;
       display: flex;
       justify-content: center;
@@ -632,16 +608,17 @@ $crlSec: #a32e2e;
       border-radius: 50%;
       margin-left: 20px;
       margin-right: 20px;
+      cursor: pointer;
     }
     img {
       width: auto;
-      height: 28px;
+      height: 25px;
     }
   }
   .p-abs-2 {
     position: absolute;
     top: 10%;
-    left: 75%;
+    left: 5%;
     width: 280px;
     background-color: #a29d9f !important;
     border-radius: 0px !important;
@@ -673,7 +650,8 @@ $crlSec: #a32e2e;
         background-color: white;
         padding: 3px;
         font-size: 15px !important;
-        img {
+        img,
+        i {
           width: 16px;
           height: 16px;
         }
@@ -719,7 +697,7 @@ $crlSec: #a32e2e;
     }
   }
   .sec-prod {
-    h2 {
+    h3 {
       &::after {
         content: " ";
         display: block;
@@ -735,28 +713,29 @@ $crlSec: #a32e2e;
       }
     }
 
-    .mini-card{
+    .mini-card {
       border-width: 2px !important;
-      .back_img{
+      .back_img {
         height: 250px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
       }
-      .review-img{
+      .review-img {
         width: 20px;
         height: 20px;
       }
-      .btn-prod{
+      .btn-prod {
         background-color: #faa22f !important;
       }
+      .lead {
+        font-size: 18px !important;
+      }
     }
-
-
   }
 
   .sec-serv {
-    h2 {
+    h3 {
       &::after {
         content: " ";
         display: block;
@@ -772,43 +751,42 @@ $crlSec: #a32e2e;
       }
     }
 
-    .mini-card{
+    .mini-card {
       border-width: 2px !important;
       padding-top: 2rem !important;
       padding-bottom: 2rem !important;
-      background-color: #F5F5F5 !important;
-      h3{
+      background-color: #f5f5f5 !important;
+      h3 {
         font-size: 26px !important;
       }
     }
   }
 
-  .sec-reviews{
-    .nav{
-        border-bottom: 0px solid white !important;
-      .nav-link{
+  .sec-reviews {
+    .nav {
+      border-bottom: 0px solid white !important;
+      .nav-link {
         width: 50%;
         border-bottom: 0px solid;
         color: black;
-        img{
+        img {
           width: 20px;
         }
       }
-      .active{ 
+      .active {
         border: none;
-        background-color: #F5F5F5 !important;
+        background-color: #f5f5f5 !important;
       }
     }
-    .tab-content{
+    .tab-content {
       margin-top: 2rem;
-      .review-form{
-        .review-img{
+      .review-form {
+        .review-img {
           width: 20px !important;
         }
       }
     }
   }
-
 }
 
 // Main Styles
@@ -882,21 +860,86 @@ body {
   font-weight: 300;
 }
 
+/* the slides */
+.slick-slide {
+  margin: 0 10px;
+}
+/* the parent */
+.slick-list {
+  margin: 0 -10px;
+}
 
+.arrow-abs-left {
+  position: absolute;
+  top: 52%;
+  transform: translate(0, -100%);
+  left: -1%;
+  z-index: 9999;
+  background-color: #f5e5e8;
+  padding: 3px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.arrow-abs-right {
+  position: absolute;
+  top: 52%;
+  right: -1%;
+  transform: translate(0, -100%);
+  z-index: 9999;
+  background-color: #f5e5e8;
+  padding: 3px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
 
+.m-auto{
+  margin: auto !important;
+}
 
+.signup-model {
+  z-index: 9999999 !important;
+  overflow: hidden;
+  .btn-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  .modal-header {
+    border-bottom: 0px solid white;
+    height: 30px !important;
+  }
+  .modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .model-body {
+    padding: 0px !important;
+  }
+  .bg-red {
+    background-color: #aa0025;
+    .logo-img {
+      width: 160px;
+    }
+  }
+  .social-img{
+    width: 30px !important;
+  }
+  label{
+    font-size: 14px !important;
+  }
 
+}
 
-
-
-
-
-// 
-// 
-// 
+//
+//
+//
 // Media
-// 
-// 
-// 
+//
+//
+//
 
 @import "media";

@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Swiper JS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <!-- Fonts ROBOTO -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -21,21 +20,20 @@
 
   <body>
     <section class="sec-header sticky-top bg-white shadow">
-      <div class="container-fluid px-md-5">
+      <div class="container">
         <!-- Nav Desktop -->
         <nav class="navbar navbar-expand-lg px-0 navbar-light bg-transparent d-none d-lg-block py-0">
-          <div class="container-fluid px-0">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo@1X.png" class="img img-fluid header-logo" alt="" /></a>
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/logo@1X.png" class="img img-fluid header-logo" alt="" />
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="discussion_form.html">discussion form</a>
-                </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Industries </a>
                   <div class="dropdown-menu DDropdownMenu shadow" aria-labelledby="navbarDropdown">
                     <div class="row">
                       <div class="col-md-4 inner-row">
@@ -63,6 +61,9 @@
                   </div>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="discussion_form.html">discussion form</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="#">advertisment</a>
                 </li>
                 <li class="nav-item">
@@ -71,7 +72,7 @@
               </ul>
               <div class="nav-right d-flex align-items-center">
                 <img src="assets/img/header_user.png" class="img w-auto user_img h40px" alt="" />
-                <a href="" class="btn rounded bg-pri pt9px h40px text-white d-flex align-items-center h-100 justify-content-center">Register Now</a>
+                <span data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn rounded bg-pri pt9px h40px text-white d-flex align-items-center h-100 justify-content-center">Register Now</span>
                 <span class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle h40px border rounded border-2px border-color-pri" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EN </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -92,7 +93,7 @@
             <h5 class="name mt-3">Ali Raza</h5>
             <p class="lead">Askari 14, Rawalpindi</p>
 
-            <div href="" class="btn rounded bg-sec text-white w-100 mb-2">Register Now</div>
+            <div class="btn rounded bg-sec text-white w-100 mb-2">Register Now</div>
 
             <ul>
               <li>
@@ -173,6 +174,144 @@
       </div>
     </section>
 
+
+    <!-- Signup popup -->
+
+    <!-- Modal -->
+    <div class="modal fade signup-model" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body" style="padding: 0px;">
+            <div class="row g-0 bg-red align-items-center">
+              <div class="col-md-6  text-center">
+                <div>
+                  <img src="assets/img/logo-white.png" class="img mb-2 img-fluid mb-5 logo-img" alt="">
+                </div>
+                <div>
+                  <button data-bs-toggle="modal" data-bs-target="#exampleModalLogin" data-bs-dismiss="modal" aria-label="Close"  class="btn bg-pri w-75 mx-2 text-white w-90 mb-2 shadow rounded-0">Sign In</button>
+                </div>
+                <div>
+                  <button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-dismiss="modal" aria-label="Close" class="btn bg-pri  w-75 mx-2 text-white w-90  shadow  rounded-0">Sign Up</button>
+                </div>
+              </div>
+              <div class="col-md-6 bg-white p-4 text-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <h5 class="mb-3">Create Your Account For Free Right Now</h5>
+
+                <div class="row g-0">
+                  <div class="col-md-6 pe-1">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">First Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 bg-white  ps-1">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Last Name</label>
+                    </div>
+                  </div>
+                  <div>
+                  </div>
+                </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Email</label>
+                  </div>
+
+                  <div class="form-floating  mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Contact Number</label>
+                  </div>
+
+                  <div class="row g-0">
+                    <div class="col-md-6 pe-1">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Create Password</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 ps-1">
+                      <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Conform Password</label>
+                      </div>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+
+                  <button class="btn bg-pri px-5 py-2 mb-3  mx-2 text-white w-90   rounded-0">Sign Up</button>
+
+                  <p class="mb-3 text-pri underline text-sm">or sign up with</p>
+
+
+                  <img src="assets/img/facebook.png" class="img img-fluid social-img pe-1" alt="">
+                  <img src="assets/img/Illustration-of-Google-icon-on-transparent-background-PNG.png" class="img img-fluid social-img ps-1" alt="">
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Login popup -->
+
+    <!-- Modal -->
+    <div class="modal fade signup-model" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body" style="padding: 0px;">
+            <div class="row g-0 bg-red align-items-center">
+              <div class="col-md-6  text-center">
+                <div>
+                  <img src="assets/img/logo-white.png" class="img mb-2 img-fluid mb-5 logo-img" alt="">
+                </div>
+                <div>
+                  <button data-bs-toggle="modal" data-bs-target="#exampleModalLogin" data-bs-dismiss="modal" aria-label="Close"  class="btn bg-pri w-75 mx-2 text-white w-90 mb-2 shadow rounded-0">Sign In</button>
+                </div>
+                <div>
+                  <button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-dismiss="modal" aria-label="Close" class="btn bg-pri  w-75 mx-2 text-white w-90  shadow  rounded-0">Sign Up</button>
+                </div>
+              </div>
+              <div class="col-md-6 bg-white p-4 text-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <h5 class="mb-3">Login in your Account</h5>
+
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Email</label>
+                  </div>
+
+                  <div class="form-floating  mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+
+
+                  <button class="btn bg-pri px-5 py-2 mb-3  mx-2 text-white w-90   rounded-0">Sign Up</button>
+
+                  <p class="mb-3 text-pri underline text-sm">or login up with</p>
+
+
+                  <img src="assets/img/facebook.png" class="img img-fluid social-img pe-1" alt="">
+                  <img src="assets/img/Illustration-of-Google-icon-on-transparent-background-PNG.png" class="img img-fluid social-img ps-1" alt="">
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <section class="sec-1-banner">
       <div class="conteiner-fluid px-0">
         <div class="swiper-container">
@@ -182,18 +321,7 @@
                 <div class="back_img" style="background-image: url(assets/img/header\ banne.png)"></div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide">
-                <div class="back_img" style="background-image: url(assets/img/header\ banne.png)"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide">
-                <div class="back_img" style="background-image: url(assets/img/header\ banne.png)"></div>
-              </div>
-            </div>
           </div>
-          <div class="swiper-pagination"></div>
 
           <div class="p-abs-1">
             <div class="input-group search-input mb-3">
@@ -204,75 +332,73 @@
             </div>
           </div>
           <div class="p-abs-2">
-            <a href="" class="btn bg-pri btn-lg rounded-0 text-white"> List your business</a>
+            <a href="" class="btn bg-pri rounded-0 text-white"> List your business</a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="sec-three-product-slider mt-sec">
-      <div class="container-fluid px-md-sec" style="overflow: hidden">
-        <h1 class="text-center mb-4 text-sec header-sec-line">Recent Business Listing</h1>
+      <div class="container" style="overflow: hidden">
+        <h2 class="text-center mb-4 text-sec header-sec-line">Recent Business Listing</h2>
+
         <div class="product-swiper-threee">
-          <div class="swiper-wrapper pb-1">
-            <div class="swiper-slide">
-              <div class="swiper-slide">
-                <div class="mini-card text-center rounded border shadow-sm">
-                  <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
-                  <h3 class="h3 text-sec">Business Name</h3>
-                  <h5 class="text-sec">Business Category</h5>
-                  <a href="" class="btn bg-pri mt-3 btn-sm text-white rounded">See More...</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide">
-                <div class="mini-card text-center rounded border shadow-sm">
-                  <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
-                  <h3 class="h3 text-sec">Business Name</h3>
-                  <h5 class="text-sec">Business Category</h5>
-                  <a href="" class="btn bg-pri mt-3 btn-sm text-white rounded">See More...</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide">
-                <div class="mini-card text-center rounded border shadow-sm">
-                  <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
-                  <h3 class="h3 text-sec">Business Name</h3>
-                  <h5 class="text-sec">Business Category</h5>
-                  <a href="" class="btn bg-pri mt-3 btn-sm text-white rounded">See More...</a>
-                </div>
-              </div>
+          <div class="swiper-slide">
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
+              <h4 class="h4 text-sec">Business Name</h4>
+              <h6 class="text-sec">Business Category</h6>
+              <a href="" class="btn bg-pri mt-3 btn-sm text-white rounded">See More...</a>
             </div>
           </div>
 
-          <div class="swiper-button-prev-unique">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" fill="rgba(163,46,46,1)" />
-            </svg>
+          <div class="swiper-slide">
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
+              <h4 class="h4 text-sec">Business Name</h4>
+              <h6 class="text-sec">Business Category</h6>
+              <a href="" class="btn bg-pri mt-3 btn-sm text-white rounded">See More...</a>
+            </div>
           </div>
-          <div class="swiper-button-next-unique">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(163,46,46,1)" />
-            </svg>
+
+          <div class="swiper-slide">
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
+              <h4 class="h4 text-sec">Business Name</h4>
+              <h6 class="text-sec">Business Category</h6>
+              <a href="" class="btn bg-pri mt-3 btn-sm text-white rounded">See More...</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
+              <h4 class="h4 text-sec">Business Name</h4>
+              <h6 class="text-sec">Business Category</h6>
+              <a href="" class="btn bg-pri mt-3 btn-sm text-white rounded">See More...</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
+              <h4 class="h4 text-sec">Business Name</h4>
+              <h6 class="text-sec">Business Category</h6>
+              <a href="" class="btn bg-pri mt-3 btn-sm text-white rounded">See More...</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-
-    
     <section class="explore-business mt-sec" style="background-image: url(assets/img/Rectangle\ 11@1X.png)">
-      <div class="container-fluid px-md-sec">
+      <div class="container">
         <div class="row align-items-center pt-4">
           <div class="col-md-6 text-white">
-            <h1 class="mb-4">
+            <h2 class="mb-3">
               Explore Your Business <br />
               in Pakistan's
-            </h1>
+            </h2>
             <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.Lorem ipsum, or lipsum as it is sometimes.</p>
           </div>
           <div class="col-md-6">
@@ -283,170 +409,108 @@
     </section>
 
     <section class="sec-three-product-slider mt-sec">
-      <div class="container-fluid px-md-sec" style="overflow: hidden">
-        <h1 class="text-center mb-4 text-sec header-sec-line">Popular Industries</h1>
+      <div class="container" style="overflow: hidden">
+        <h2 class="text-center mb-4 text-sec header-sec-line">Popular Industries</h2>
         <div class="product-swiper-threee">
-          <div class="swiper-wrapper pb-1">
-            <div class="swiper-slide">
-              <div class="swiper-slide">
-                <div class="mini-card text-center rounded border shadow-sm">
-                  <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
-                  <h3 class="h3 text-sec">Resturent</h3>
-                  <p class="mb-1">Order Online</p>
-                  <p class="mb-1">Televisions</p>
-                  <h6 class="text-sec">Air Conditioners</h6>
-                  <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">More Info...</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide">
-                <div class="mini-card text-center rounded border shadow-sm">
-                  <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
-                  <h3 class="h3 text-sec">Resturent</h3>
-                  <p class="mb-1">Order Online</p>
-                  <p class="mb-1">Televisions</p>
-                  <h6 class="text-sec">Air Conditioners</h6>
-                  <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">More Info...</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide">
-                <div class="mini-card text-center rounded border shadow-sm">
-                  <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
-                  <h3 class="h3 text-sec">Resturent</h3>
-                  <p class="mb-1">Order Online</p>
-                  <p class="mb-1">Televisions</p>
-                  <h6 class="text-sec">Air Conditioners</h6>
-                  <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">More Info...</a>
-                </div>
-              </div>
-            </div>
+          <div class="mini-card text-center rounded border shadow-sm">
+            <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
+            <h4 class="h4 text-sec">Resturent</h4>
+            <p class="mb-1">Order Online</p>
+            <p class="mb-1">Televisions</p>
+            <h6 class="text-sec">Air Conditioners</h6>
+            <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">More Info...</a>
           </div>
 
-          <div class="swiper-button-prev-unique">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" fill="rgba(163,46,46,1)" />
-            </svg>
+          <div class="mini-card text-center rounded border shadow-sm">
+            <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
+            <h4 class="h4 text-sec">Resturent</h4>
+            <p class="mb-1">Order Online</p>
+            <p class="mb-1">Televisions</p>
+            <h6 class="text-sec">Air Conditioners</h6>
+            <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">More Info...</a>
           </div>
-          <div class="swiper-button-next-unique">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(163,46,46,1)" />
-            </svg>
+
+          <div class="mini-card text-center rounded border shadow-sm">
+            <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
+            <h4 class="h4 text-sec">Resturent</h4>
+            <p class="mb-1">Order Online</p>
+            <p class="mb-1">Televisions</p>
+            <h6 class="text-sec">Air Conditioners</h6>
+            <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">More Info...</a>
+          </div>
+
+          <div class="mini-card text-center rounded border shadow-sm">
+            <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
+            <h4 class="h4 text-sec">Resturent</h4>
+            <p class="mb-1">Order Online</p>
+            <p class="mb-1">Televisions</p>
+            <h6 class="text-sec">Air Conditioners</h6>
+            <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">More Info...</a>
+          </div>
+
+          <div class="mini-card text-center rounded border shadow-sm">
+            <div class="back_img mb-3" style="background-image: url(assets/img/product-1.png)"></div>
+            <h4 class="h4 text-sec">Resturent</h4>
+            <p class="mb-1">Order Online</p>
+            <p class="mb-1">Televisions</p>
+            <h6 class="text-sec">Air Conditioners</h6>
+            <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">More Info...</a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="sec-home-products mt-sec pb-4">
-      <div class="container-fluid px-md-sec">  
-        <h1 class="pt-4 text-center text-white">Popular Products</h1>
+      <div class="container">
+        <h2 class="pt-4 text-center text-white">Popular Products</h2>
 
         <div class="mt-5">
-          <div class="product-swiper-threee p-rel">
-            <div class="swiper-wrapper pb-1">
-              <div class="swiper-slide">
-                <div class="swiper-slide">
-                  <div class="mini-card text-center rounded border shadow-sm">
-                    <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
-                    <h4 class="mb-2 text-pri">Product Name</h4>
-                    <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide">
-                  <div class="mini-card text-center rounded border shadow-sm">
-                    <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
-                    <h4 class="mb-2 text-pri">Product Name</h4>
-                    <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide">
-                  <div class="mini-card text-center rounded border shadow-sm">
-                    <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
-                    <h4 class="mb-2 text-pri">Product Name</h4>
-                    <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
-                  </div>
-                </div>
-              </div>
+          <div class="product-swiper-five p-rel">
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
+              <h5 class="mb-2 text-pri">Product Name</h5>
+              <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
             </div>
-  
-            <div class="swiper-button-prev-unique">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" fill="rgba(163,46,46,1)" />
-              </svg>
+
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
+              <h5 class="mb-2 text-pri">Product Name</h5>
+              <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
             </div>
-            <div class="swiper-button-next-unique">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(163,46,46,1)" />
-              </svg>
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
+              <h5 class="mb-2 text-pri">Product Name</h5> 
+              <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
+            </div>
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
+              <h5 class="mb-2 text-pri">Product Name</h5>
+              <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
+            </div>
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
+              <h5 class="mb-2 text-pri">Product Name</h5>
+              <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
+            </div>
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
+              <h5 class="mb-2 text-pri">Product Name</h5>
+              <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
+            </div>
+            <div class="mini-card text-center rounded border shadow-sm">
+              <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
+              <h5 class="mb-2 text-pri">Product Name</h5>
+              <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
             </div>
           </div>
         </div>
-        <div class="mt-5">
-          <div class="product-swiper-threee p-rel">
-            <div class="swiper-wrapper pb-1">
-              <div class="swiper-slide">
-                <div class="swiper-slide">
-                  <div class="mini-card text-center rounded border shadow-sm">
-                    <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
-                    <h4 class="mb-2 text-pri">Product Name</h4>
-                    <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide">
-                  <div class="mini-card text-center rounded border shadow-sm">
-                    <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
-                    <h4 class="mb-2 text-pri">Product Name</h4>
-                    <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide">
-                  <div class="mini-card text-center rounded border shadow-sm">
-                    <div class="back_img mb-2" style="background-image: url(assets/img/p1@1X.png)"></div>
-                    <h4 class="mb-2 text-pri">Product Name</h4>
-                    <a href="" class="btn bg-pri d-block mx-3 mt-3 btn-sm text-white rounded">$199</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="swiper-button-prev-unique">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" fill="rgba(163,46,46,1)" />
-              </svg>
-            </div>
-            <div class="swiper-button-next-unique">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(163,46,46,1)" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-
       </div>
     </section>
 
-    
     <section class="sec-manage-business mt-sec">
-      <div class="container-fluid px-md-sec">
+      <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6 order-sm-2 pb-5 pb-md-unset">
+          <div class="col-md-6 col-lg-9 order-sm-2 pb-5 pb-md-unset">
             <h2>Manage your business on the go!</h2>
             <p class="lead">Download the dialbox app</p>
             <div class="input-group mb-3">
@@ -457,57 +521,63 @@
             <img src="assets/img/apple store.png" class="img img-fluid play-img android-img mb-2" alt="" />
             <img src="assets/img/goolge-play.png" class="img img-fluid play-img mb-2" alt="" />
           </div>
-          <div class="col-md-6 text-left order-sm-1">
+          <div class="col-md-6 col-lg-3 text-left order-sm-1">
             <img src="assets/img/mobile_mig.png" class="img img-fluid moile-app-img" alt="" />
           </div>
-        </div>
+        </div> 
       </div>
     </section>
 
-    <section class="sec-footer pt-5">
-      <div class="container-fluid px-md-sec">
-        <div class="row mb-4">
-          <div class="col-lg-6 border-roght- mb-md-4 mb-lg-0">
-            <img src="assets/img/logo-white.png" class="img img-fluid mb-4 logo-white" alt="" />
-            <p>Welcome to Dialbox, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and purchasing activities. We take pride in our iconic customer support number, +92 51 0000000 and the fact that we own a strong hold on local business information in Pakistan.</p>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control border-sec" placeholder="Enter your mobile number" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-              <span class="input-group-text bg-sec text-white border-sec" id="basic-addon2">Send App Link</span>
+    <section class="sec-footer pt-5 mb-0 p">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-lg-6 border-roght- mb-md-4 mb-lg-0">
+              <img src="assets/img/logo-white.png" class="img img-fluid mb-4 logo-white" alt="" />
+              <p>Welcome to Dialbox, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and purchasing activities. We take pride in our iconic customer support number, +92 51 0000000 and the fact that we own a strong hold on local business information in Pakistan.</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control border-sec" placeholder="Enter your mobile number" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                <span class="input-group-text bg-sec text-white border-sec" id="basic-addon2">Send App Link</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-4 my-md-0">
+              <h4>Our Company</h4>
+              <a href="">About Us</a>
+              <a href="">Careers</a>
+              <a href="">Press</a>
+              <a href="">Terms & Conditions</a>
+              <a href="">Privacy Policy</a>
+              <img src="assets/img/apple store.png" class="img img-fluid img-mobi mb-4 d-none d-md-inline-block" alt="" />
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4>Customer Care</h4>
+              <a href="">Help Center</a>
+              <a href="">Feedback</a>
+              <a href="">Report</a>
+              <a href="">Contact Us</a>
+              <a href="" class="visibility-hidden d-none d-md-block">X</a>
+              <img src="assets/img/goolge-play.png" class="img img-fluid img-mobi mb-4" alt="" />
+              <img src="assets/img/apple store.png" class="img img-fluid img-mobi mb-4 d-inline-block d-md-none" alt="" />
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 my-4 my-md-0">
-            <h4>Our Company</h4>
-            <a href="">About Us</a>
-            <a href="">Careers</a>
-            <a href="">Press</a>
-            <a href="">Terms & Conditions</a>
-            <a href="">Privacy Policy</a>
-            <img src="assets/img/apple store.png" class="img img-fluid img-mobi mb-4 d-none d-md-inline-block" alt="" />
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4>Customer Care</h4>
-            <a href="">Help Center</a>
-            <a href="">Feedback</a>
-            <a href="">Report</a>
-            <a href="">Contact Us</a>
-            <a href="" class="visibility-hidden d-none d-md-block">X</a>
-            <img src="assets/img/goolge-play.png" class="img img-fluid img-mobi mb-4" alt="" />
-            <img src="assets/img/apple store.png" class="img img-fluid img-mobi mb-4 d-inline-block d-md-none" alt="" />
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-0">
+        <div class="container sec-bottom-footer">
+          <div class="d-block d-md-flex text-center justify-content-between py-4">
+            <span>© copyright Dialboxx 2021 . All Right Reserved</span>
+            <span>Powred by: XxxxXxxxxxx</span>
           </div>
         </div>
       </div>
-      <div class="container-fluid px-md-sec sec-bottom-footer">
-        <div class="d-block d-md-flex text-center justify-content-between py-4">
-          <span>© copyright Dialboxx 2021 . All Right Reserved</span>
-          <span>Powred by: XxxxXxxxxxx</span>
-        </div>
-      </div>
+
     </section>
+
 
     <script src="assets/js/jquery-3.6.0.slim.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/script.js" defer></script>
   </body>
 </html>

@@ -6,44 +6,61 @@ const closeNav = () => {
   document.getElementById("mySidenav").style.width = "0";
 };
 
-// main slider
-const swiper = new Swiper(".swiper-container", {
-  // Optional parameters
-  direction: "horizontal",
-  slidesPerView: 1,
-  spaceBetween: 100,
+$(".product-swiper-threee").slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  dots: false, 
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  prevArrow: `<img src="assets/img/arrrow-l.png" class="arrow-abs-left" >`,
+  nextArrow: `<img src="assets/img/arrrow-r.png" class="arrow-abs-right" >`,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
-// product slider
-const productSwiper = new Swiper(".product-swiper-threee", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
+
+$(".product-swiper-five").slick({
+  dots: true,
+  infinite: false,
   speed: 300,
-  spaceBetween: 100,
-  slidesPerView: 3,
-  navigation: {
-    nextEl: ".swiper-button-next-unique",
-    prevEl: ".swiper-button-prev-unique",
-  },
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      spaceBetween: 30,
-      slidesPerView: 1,
-      centeredSlides: true,
-      spaceBetween: 30,
+  dots: false, 
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  prevArrow: `<img src="assets/img/arrrow-l.png" class="arrow-abs-left" >`,
+  nextArrow: `<img src="assets/img/arrrow-r.png" class="arrow-abs-right" >`,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
     },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 80,
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
     },
-    991: {
-      slidesPerView: 3,
-      spaceBetween: 100,
-    },
-  },
+  ],
 });
 
 // // discussion form script
@@ -54,11 +71,10 @@ const productSwiper = new Swiper(".product-swiper-threee", {
 
 // }
 
-
-$( document ).ready(function() {
-  if( screen.width>1900 ){
-    $('#sec-main-menu-discussionID:first').addClass("container");
-    $('#sec-main-menu-discussionID:first').removeClass("container-fluid");
-    $('#sec-main-menu-discussionID:first').removeClass("px-md-5");
+$(document).ready(function () {
+  if (screen.width > 1900) {
+    $("#sec-main-menu-discussionID:first").addClass("container");
+    $("#sec-main-menu-discussionID:first").removeClass("container-fluid");
+    $("#sec-main-menu-discussionID:first").removeClass("px-md-5");
   }
-}); 
+});
