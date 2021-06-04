@@ -1130,6 +1130,128 @@
   width: 20px !important;
 }
 
+.sec-1-buslisting .back_img {
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  position: relative;
+}
+
+.sec-1-buslisting .back_img .p-abs-1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 10px);
+          transform: translate(-50%, 10px);
+  z-index: 5555;
+}
+
+.sec-1-buslisting .back_img .p-abs-1 .search-input .igt1 {
+  padding-right: 0px !important;
+}
+
+.sec-1-buslisting .back_img .p-abs-1 .search-input .igt1 img {
+  width: 20px;
+  border-right: 0px solid #eeeeee !important;
+  background-color: #eeeeee;
+}
+
+.sec-1-buslisting .back_img .p-abs-1 .search-input .one {
+  width: 120px;
+  border-left: 0px solid #eeeeee !important;
+  background-color: #eeeeee;
+  -webkit-box-shadow: inset 0 -1px 0 #ddd;
+          box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.sec-1-buslisting .back_img .p-abs-1 .search-input .two {
+  width: 360px;
+  -webkit-box-shadow: inset 0 -1px 0 #ddd;
+          box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.sec-1-buslisting .back_img .p-abs-1 .search-input .search-img {
+  width: 27px;
+  cursor: pointer;
+}
+
+.sec-1-buslisting .back_img .p-abs-1 .search-input input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.sec-1-buslisting .back_img .p-abs-1 .search-input input:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.sec-1-buslisting .back_img .p-abs-1 .search-input input::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.sec-1-buslisting .back_img .p-abs-1 .search-input input::placeholder {
+  font-size: 14px;
+}
+
+.sec-2-bus-listing {
+  background-color: #E1DCDD;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.sec-main-bus-listing .left-card {
+  background-color: #EFEBEC;
+  padding: 20px;
+}
+
+.sec-main-bus-listing .left-card .one ul {
+  list-style-image: url(../img/list_img.png);
+}
+
+.sec-main-bus-listing .two .mini-card {
+  background-color: #EFEBEC;
+}
+
+.sec-main-bus-listing .two .mini-card .row {
+  padding: 20px;
+}
+
+.sec-main-bus-listing .two .mini-card .back_img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+}
+
+.sec-main-bus-listing .two .mini-card .rating img {
+  width: 20px;
+}
+
+.sec-main-bus-listing .two .mini-card .rating .text-secondary {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.sec-main-bus-listing .two .mini-card .cell-img {
+  width: 15px;
+}
+
+.sec-main-bus-listing .two .mini-card .verified-img {
+  width: 70px;
+}
+
+.sec-main-bus-listing .two .mini-card .btn-card {
+  background-color: white;
+  color: #1568a8;
+  width: 150px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.sec-main-bus-listing .two .mini-card .btn-card:hover {
+  background-color: #1568a8;
+  color: white;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -1338,6 +1460,12 @@ body {
   .sec-main-business-profile .sec-prod .mini-card .back_img {
     height: 250px !important;
   }
+  .sec-1-buslisting .back_img {
+    height: 300px;
+  }
+  .sec-main-bus-listing .two .mini-card .btn-card {
+    width: 120px !important;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1357,20 +1485,20 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .sec-1-banner .input-group .one {
+  .sec-1-banner .input-group .one, .sec-1-buslisting .input-group .one {
     width: 20% !important;
   }
-  .sec-1-banner .input-group .two {
+  .sec-1-banner .input-group .two, .sec-1-buslisting .input-group .two {
     width: 50% !important;
   }
-  .sec-1-banner .input-group .search-img {
+  .sec-1-banner .input-group .search-img, .sec-1-buslisting .input-group .search-img {
     width: 20px !important;
   }
-  .sec-1-banner .p-abs-1 {
-    left: 15%;
-    right: 15%;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+  .sec-1-banner .p-abs-1, .sec-1-buslisting .p-abs-1 {
+    left: 15% !important;
+    right: 15% !important;
+    -webkit-transform: translate(0, 0) !important;
+            transform: translate(0, 0) !important;
   }
   .sec-one-bus_profile .p-abs-2 {
     width: 250px;

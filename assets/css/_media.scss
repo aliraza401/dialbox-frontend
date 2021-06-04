@@ -71,6 +71,22 @@
     height: 250px !important;
   }
 
+  .sec-1-buslisting{
+    .back_img{
+      height: 300px;
+    }
+  }
+
+  .sec-main-bus-listing{
+    .two{
+      .mini-card{
+        .btn-card{
+          width: 120px !important;
+        }
+      }
+    }
+  }
+
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -87,6 +103,7 @@
   .sec-manage-business .input-group {
     width: 300px;
   }
+
   .explore-business {
     h2 {
       font-size: 22px;
@@ -101,7 +118,7 @@
       padding-bottom: 10px;
     }
   }
-  .sec-1-banner {
+  .sec-1-banner, .sec-1-buslisting {
     .input-group {
       .one {
         width: 20% !important;
@@ -114,9 +131,9 @@
       } 
     }
     .p-abs-1 {
-      left: 15%;
-      right: 15%;
-      transform: translate(0, 0);
+      left: 15% !important;
+      right: 15% !important;
+      transform: translate(0, 0) !important;
     }
   } 
 
