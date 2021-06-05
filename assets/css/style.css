@@ -1193,13 +1193,13 @@
 }
 
 .sec-2-bus-listing {
-  background-color: #E1DCDD;
+  background-color: #e1dcdd;
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
 .sec-main-bus-listing .left-card {
-  background-color: #EFEBEC;
+  background-color: #efebec;
   padding: 20px;
 }
 
@@ -1208,7 +1208,7 @@
 }
 
 .sec-main-bus-listing .two .mini-card {
-  background-color: #EFEBEC;
+  background-color: #efebec;
 }
 
 .sec-main-bus-listing .two .mini-card .row {
@@ -1250,6 +1250,40 @@
 .sec-main-bus-listing .two .mini-card .btn-card:hover {
   background-color: #1568a8;
   color: white;
+}
+
+.sec-1-category .back_img {
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+
+.sec-1-category .back_img .p-abs-1 {
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5555;
+}
+
+.sec-2-category .mini-card {
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.sec-2-category .mini-card img {
+  height: 100px;
+  width: auto;
+}
+
+.sec-2-category .mini-card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 body {
@@ -1465,6 +1499,12 @@ body {
   }
   .sec-main-bus-listing .two .mini-card .btn-card {
     width: 120px !important;
+  }
+  .sec-1-category .back_img {
+    background-position: left;
+  }
+  .sec-1-category .back_img .p-abs-1 {
+    left: 25%;
   }
 }
 
