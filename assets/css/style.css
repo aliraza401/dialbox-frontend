@@ -1485,16 +1485,20 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .sec-1-banner .input-group .one, .sec-1-buslisting .input-group .one {
+  .sec-1-banner .input-group .one,
+  .sec-1-buslisting .input-group .one {
     width: 20% !important;
   }
-  .sec-1-banner .input-group .two, .sec-1-buslisting .input-group .two {
+  .sec-1-banner .input-group .two,
+  .sec-1-buslisting .input-group .two {
     width: 50% !important;
   }
-  .sec-1-banner .input-group .search-img, .sec-1-buslisting .input-group .search-img {
+  .sec-1-banner .input-group .search-img,
+  .sec-1-buslisting .input-group .search-img {
     width: 20px !important;
   }
-  .sec-1-banner .p-abs-1, .sec-1-buslisting .p-abs-1 {
+  .sec-1-banner .p-abs-1,
+  .sec-1-buslisting .p-abs-1 {
     left: 15% !important;
     right: 15% !important;
     -webkit-transform: translate(0, 0) !important;

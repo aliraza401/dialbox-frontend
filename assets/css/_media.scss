@@ -60,7 +60,6 @@
     }
   }
 
-
   .sec-one-bus_profile {
     .p-abs-2 {
       width: 250px;
@@ -71,22 +70,21 @@
     height: 250px !important;
   }
 
-  .sec-1-buslisting{
-    .back_img{
+  .sec-1-buslisting {
+    .back_img {
       height: 300px;
     }
   }
 
-  .sec-main-bus-listing{
-    .two{
-      .mini-card{
-        .btn-card{
+  .sec-main-bus-listing {
+    .two {
+      .mini-card {
+        .btn-card {
           width: 120px !important;
         }
       }
     }
   }
-
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -118,7 +116,8 @@
       padding-bottom: 10px;
     }
   }
-  .sec-1-banner, .sec-1-buslisting {
+  .sec-1-banner,
+  .sec-1-buslisting {
     .input-group {
       .one {
         width: 20% !important;
@@ -128,14 +127,14 @@
       }
       .search-img {
         width: 20px !important;
-      } 
+      }
     }
     .p-abs-1 {
       left: 15% !important;
       right: 15% !important;
       transform: translate(0, 0) !important;
     }
-  } 
+  }
 
   .sec-one-bus_profile {
     .p-abs-2 {
@@ -157,15 +156,15 @@
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
 }
- 
+
 //
 //
 //
 //
-@media (min-width: 576px){
+@media (min-width: 576px) {
   .modal-dialog {
-      max-width: 700px;
-      margin: 1.75rem auto;
+    max-width: 700px;
+    margin: 1.75rem auto;
   }
 }
 // Large devices (desktops, 992px and up)
