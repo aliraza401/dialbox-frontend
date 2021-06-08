@@ -998,6 +998,98 @@ $crlSec: #a32e2e;
   }
 }
 
+
+
+
+
+//
+//
+//
+//
+//
+//
+// Gov Directory
+//
+//
+//
+//
+//
+//
+
+.sec-main-gov-directory {
+  .left-card {
+    border: 2px solid lightgray;
+    padding: 20px;
+    .one {
+      select{
+        
+      }
+    }
+    .two{
+      background-color: #f6f6f6 !important;
+      border: 1px solid lightgray ;
+      ul{
+        li{
+          color: $clrPri;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .three{
+      background-color: #f6f6f6 !important;
+      border: 1px solid lightgray ;
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+  .two { 
+    .mini-card {
+      background-color: #f6f6f6 !important;
+      .row {
+        padding: 20px;
+      }
+      .back_img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 220px;
+      }
+      .rating {
+        img {
+          width: 20px;
+        }
+        .text-secondary {
+          font-size: 18px;
+          font-weight: 300;
+        }
+      }
+      .btn-card {
+        background-color: white;
+        color: $clrPri;
+        width: 200px;
+        font-size: 18px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid lightgray;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          background-color: $clrPri;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
 //
 //
 //
@@ -1150,6 +1242,58 @@ body {
     font-size: 14px !important;
   }
 }
+
+.model-gov-directory {
+  z-index: 9999999 !important;
+  overflow: hidden;
+  .btn-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+  }
+  .modal-header {
+    border-bottom: 0px solid white;
+    height: 30px !important;
+  }
+  .modal-content {
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .model-body {
+    padding: 0px !important;
+  }
+  .mini-card{
+    border-radius: 15px !important;
+    overflow: hidden;
+    background-color: white !important;
+    color: $clrPri;
+    border: 1px solid lightgray;
+    .haeder{
+      background-color: $clrPri;
+      color: white;
+      text-align: center;
+    }
+    ul{
+      list-style-type: none;
+      padding-left: 10px;
+      margin-top: 15px;
+      font-size: 14px !important;
+
+    }
+    .all-black *{
+      color: #111;
+      border-right: 1px solid lightgray;
+    }
+  }
+
+
+}
+
+.line-height-1{
+  line-height: 1.2;
+}
+
+
 
 //
 //

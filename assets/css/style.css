@@ -1286,6 +1286,79 @@
           transform: scale(1.03);
 }
 
+.sec-main-gov-directory .left-card {
+  border: 2px solid lightgray;
+  padding: 20px;
+}
+
+.sec-main-gov-directory .left-card .two {
+  background-color: #f6f6f6 !important;
+  border: 1px solid lightgray;
+}
+
+.sec-main-gov-directory .left-card .two ul li {
+  color: #1568a8;
+  margin-bottom: 10px;
+}
+
+.sec-main-gov-directory .left-card .three {
+  background-color: #f6f6f6 !important;
+  border: 1px solid lightgray;
+}
+
+.sec-main-gov-directory .left-card .three p {
+  font-size: 18px;
+}
+
+.sec-main-gov-directory .two .mini-card {
+  background-color: #f6f6f6 !important;
+}
+
+.sec-main-gov-directory .two .mini-card .row {
+  padding: 20px;
+}
+
+.sec-main-gov-directory .two .mini-card .back_img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+}
+
+.sec-main-gov-directory .two .mini-card .rating img {
+  width: 20px;
+}
+
+.sec-main-gov-directory .two .mini-card .rating .text-secondary {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.sec-main-gov-directory .two .mini-card .btn-card {
+  background-color: white;
+  color: #1568a8;
+  width: 200px;
+  font-size: 18px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid lightgray;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.sec-main-gov-directory .two .mini-card .btn-card:hover {
+  background-color: #1568a8;
+  color: white;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -1437,6 +1510,61 @@ body {
 
 .signup-model label {
   font-size: 14px !important;
+}
+
+.model-gov-directory {
+  z-index: 9999999 !important;
+  overflow: hidden;
+}
+
+.model-gov-directory .btn-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+
+.model-gov-directory .modal-header {
+  border-bottom: 0px solid white;
+  height: 30px !important;
+}
+
+.model-gov-directory .modal-content {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.model-gov-directory .model-body {
+  padding: 0px !important;
+}
+
+.model-gov-directory .mini-card {
+  border-radius: 15px !important;
+  overflow: hidden;
+  background-color: white !important;
+  color: #1568a8;
+  border: 1px solid lightgray;
+}
+
+.model-gov-directory .mini-card .haeder {
+  background-color: #1568a8;
+  color: white;
+  text-align: center;
+}
+
+.model-gov-directory .mini-card ul {
+  list-style-type: none;
+  padding-left: 10px;
+  margin-top: 15px;
+  font-size: 14px !important;
+}
+
+.model-gov-directory .mini-card .all-black * {
+  color: #111;
+  border-right: 1px solid lightgray;
+}
+
+.line-height-1 {
+  line-height: 1.2;
 }
 
 @media (max-width: 575.98px) {
