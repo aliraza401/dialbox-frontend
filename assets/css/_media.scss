@@ -74,7 +74,7 @@
     .back_img {
       height: 300px;
     } 
-  }
+  } 
 
   .sec-main-bus-listing {
     .two {
@@ -91,6 +91,13 @@
   .sec-1-category .back_img .p-abs-1 {
     left: 25%;
   }
+
+  .sec-2-packages {
+    .mini-card {
+      border-left: 0px solid white;
+    }
+  }
+
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -157,6 +164,13 @@
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
+  .sec-1-packages {
+    .mini-card {
+      width: 100% !important;
+    }
+  }
+
+
 }
 
 // X-Large devices (large desktops, less than 1400px)
@@ -213,6 +227,7 @@
     font-size: 3rem;
   }
 }
+
 
 @media (min-width: 1200px) {
   .container,
