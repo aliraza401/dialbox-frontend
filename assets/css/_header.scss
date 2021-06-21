@@ -4,11 +4,11 @@ $crlSec: #a32e2e;
 .sec-header { 
   z-index: 99999;
   * {
-    font-size: 16px !important;
+    font-size: 15px !important;
   }
 
   .header-logo {
-    width: 140px !important;
+    width: 120px !important;
   }
 
   .rounded {
@@ -65,15 +65,20 @@ $crlSec: #a32e2e;
   }
 
   .sidenav .closebtn {
-    position: absolute;
+    position: absolute; 
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 50px; 
   }
 
   .logo-mobile {
     width: 130px !important;
+  }
+
+  .user_img, .height-35{
+    height: 35px;
+    width: auto;
   }
 
   .user_img_mobile {
@@ -910,7 +915,7 @@ Main Components
     height: 40px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 40px 40px;
+    background-size: 40px 40px; 
   }
   .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-1::before {
     background-image: url("../img/nucleo-icon-1.svg");

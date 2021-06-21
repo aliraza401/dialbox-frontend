@@ -8,11 +8,12 @@ $clrPriDark: #135d97;
     border-right: 1px solid darkgray;
   }
   .logo-white {
-    width: 180px;
+    width: 120px;
   }
 
   h4{
-    font-size: 20px ;
+    font-size: 20px ; 
+    margin-bottom: 15px !important;
   }
 
   .input-group {
@@ -23,9 +24,10 @@ $clrPriDark: #135d97;
     color: white;
     text-decoration: none;
     margin-bottom: 7px;
+    font-size: 14px !important;
   } 
   .img-mobi {
-    width: 150px;
+    width: 120px;
     margin-top: 20px;
   }
   background-color: $clrPri;

@@ -4,11 +4,11 @@
 }
 
 .sec-header * {
-  font-size: 16px !important;
+  font-size: 15px !important;
 }
 
 .sec-header .header-logo {
-  width: 140px !important;
+  width: 120px !important;
 }
 
 .sec-header .rounded {
@@ -75,6 +75,11 @@
 
 .sec-header .logo-mobile {
   width: 130px !important;
+}
+
+.sec-header .user_img, .sec-header .height-35 {
+  height: 35px;
+  width: auto;
 }
 
 .sec-header .user_img_mobile {
@@ -1481,11 +1486,12 @@ Main Components
 }
 
 .sec-footer .logo-white {
-  width: 180px;
+  width: 120px;
 }
 
 .sec-footer h4 {
   font-size: 20px;
+  margin-bottom: 15px !important;
 }
 
 .sec-footer .input-group {
@@ -1497,10 +1503,11 @@ Main Components
   color: white;
   text-decoration: none;
   margin-bottom: 7px;
+  font-size: 14px !important;
 }
 
 .sec-footer .img-mobi {
-  width: 150px;
+  width: 120px;
   margin-top: 20px;
 }
 
@@ -1575,7 +1582,7 @@ Main Components
 
 .sec-1-banner .p-abs-2 {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
   -webkit-transform: translate(-50%, 10px);
           transform: translate(-50%, 10px);
@@ -1746,7 +1753,7 @@ Main Components
 }
 
 .sec-home-products .mini-card .back_img {
-  height: 240px !important;
+  height: 220px !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1755,6 +1762,12 @@ Main Components
 .sec-home-products .mini-card:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.sec-home-products .images img {
+  width: 18px !important;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 .sec-manage-business .input-group {
@@ -2845,6 +2858,10 @@ body {
   line-height: 1.2;
 }
 
+body p * {
+  font-size: 15px !important;
+}
+
 @media (max-width: 575.98px) {
   .order-sm-2 {
     -webkit-box-ordinal-group: 3 !important;
@@ -3033,5 +3050,51 @@ body {
   .sec-1-banner .back_img {
     height: 900px !important;
   }
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 570px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 760px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 1000px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1200px !important;
+  }
+}
+
+h2 {
+  font-size: 28px !important;
+}
+
+h4 {
+  font-size: 20px !important;
+}
+
+h6, p, a, li {
+  font-size: 15px !important;
 }
 /*# sourceMappingURL=style.css.map */
