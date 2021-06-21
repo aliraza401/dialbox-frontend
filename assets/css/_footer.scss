@@ -1,24 +1,25 @@
-$clrPri: #1568a8;
+$clrPri: #4e79aa; 
 $crlSec: #a32e2e; 
-$clrPriDark: #135d97;
-
+$clrPriDark: #135d97; 
+ 
 .sec-footer {
 
   .border-roght- {
-    border-right: 1px solid darkgray;
+    border-right: 2px solid rgb(124, 124, 124);
   }
   .logo-white {
-    width: 120px;
+    width: 140px;
   }
-
+ 
   h4{
     font-size: 20px ; 
     margin-bottom: 15px !important;
+    font-weight: normal !important;
   }
 
   .input-group {
-    width: 450px;
-  }
+    width: 400px;
+  } 
   a {
     display: block;
     color: white;
@@ -27,7 +28,7 @@ $clrPriDark: #135d97;
     font-size: 14px !important;
   } 
   .img-mobi {
-    width: 120px;
+    width: 150px;
     margin-top: 20px;
   }
   background-color: $clrPri;

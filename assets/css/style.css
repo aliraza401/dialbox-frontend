@@ -44,7 +44,7 @@
   z-index: 11;
   top: 0;
   left: 0;
-  background-color: rgba(21, 104, 168, 0.98);
+  background-color: rgba(78, 121, 170, 0.98);
   overflow-x: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -209,13 +209,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #1568a8;
+  background: #4e79aa;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #1568a8;
+  background: #4e79aa;
 }
 
 .sec-header-two .header-logo-white {
@@ -1477,25 +1477,92 @@ Main Components
   background-color: transparent;
 }
 
+.MEGA_MENU_SCSS .cd-dropdown-content {
+  height: 350px;
+  overflow-y: auto;
+}
+
+.cd-dropdown.dropdown-is-active {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.cd-dropdown.dropdown-is-active ::-webkit-scrollbar {
+  width: 3px;
+}
+
+.cd-dropdown.dropdown-is-active ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.cd-dropdown.dropdown-is-active ::-webkit-scrollbar-thumb {
+  background: #4e79aa;
+  border-radius: 10px;
+}
+
+.cd-dropdown.dropdown-is-active ::-webkit-scrollbar-thumb:hover {
+  background: #4e79aa;
+}
+
+.sec-header .nav-link, .sec-header .cd-dropdown-trigger {
+  color: #4e79aa !important;
+}
+
+.sec-header .cd-dropdown-trigger::after {
+  background: #4e79aa !important;
+  -webkit-filter: invert(0) !important;
+          filter: invert(0) !important;
+}
+
+.sec-header .cd-dropdown-trigger::before {
+  background: #4e79aa !important;
+  -webkit-filter: invert(0) !important;
+          filter: invert(0) !important;
+}
+
+.height-35 {
+  height: 30px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px !important;
+}
+
+.height-35.px-5 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
 .sec-footer {
-  background-color: #1568a8;
+  background-color: #4e79aa;
 }
 
 .sec-footer .border-roght- {
-  border-right: 1px solid darkgray;
+  border-right: 2px solid #7c7c7c;
 }
 
 .sec-footer .logo-white {
-  width: 120px;
+  width: 140px;
 }
 
 .sec-footer h4 {
   font-size: 20px;
   margin-bottom: 15px !important;
+  font-weight: normal !important;
 }
 
 .sec-footer .input-group {
-  width: 450px;
+  width: 400px;
 }
 
 .sec-footer a {
@@ -1507,12 +1574,12 @@ Main Components
 }
 
 .sec-footer .img-mobi {
-  width: 120px;
+  width: 150px;
   margin-top: 20px;
 }
 
 .sec-footer .footer-top {
-  background-color: #1568a8;
+  background-color: #4e79aa;
   color: white;
 }
 
@@ -1524,11 +1591,11 @@ Main Components
 }
 
 .bg-pri {
-  background-color: #1568a8 !important;
+  background-color: #4e79aa !important;
 }
 
 .text-pri {
-  color: #1568a8 !important;
+  color: #4e79aa !important;
 }
 
 .bg-sec {
@@ -1540,7 +1607,7 @@ Main Components
 }
 
 .border-color-pri {
-  border-color: #1568a8 !important;
+  border-color: #4e79aa !important;
 }
 
 .sec-1-banner .back_img {
@@ -1634,6 +1701,31 @@ Main Components
   font-size: 14px;
 }
 
+.sec-1-banner .list-btn- {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+}
+
+.sec-three-product-slider {
+  /* the parent */
+}
+
+.sec-three-product-slider .slick-slide {
+  margin: 0 18px;
+}
+
+.sec-three-product-slider .arrow-abs-right {
+  right: -1.5%;
+}
+
+.sec-three-product-slider .arrow-abs-left {
+  left: -1.5%;
+}
+
+.sec-three-product-slider .slick-list {
+  margin: 0 -18px;
+}
+
 .sec-three-product-slider .product-swiper-threee {
   position: relative;
 }
@@ -1692,9 +1784,28 @@ Main Components
   background-position: center;
 }
 
+.sec-three-product-slider .mini-card .see-more-btn {
+  padding: 7px 9px;
+  border-radius: 7px !important;
+}
+
+.sec-three-product-slider .mini-card h6 {
+  font-weight: 500;
+}
+
+.sec-three-product-slider .mini-card .rating-star img {
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
+}
+
 .sec-three-product-slider .mini-card:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.sec-three-product-slider .more-info-btn {
+  border-radius: 8px !important;
 }
 
 .explore-business {
@@ -1771,7 +1882,7 @@ Main Components
 }
 
 .sec-manage-business .input-group {
-  width: 450px;
+  width: 380px;
 }
 
 .sec-manage-business .android-img {
@@ -1912,7 +2023,7 @@ Main Components
 }
 
 .main-sec-discussion-form .three .text-trend:hover {
-  color: #1568a8;
+  color: #4e79aa;
 }
 
 .main-sec-discussion-form .three .mini-card {
@@ -1934,8 +2045,8 @@ Main Components
 
 .main-sec-discussion-form .three .mini-card:hover p {
   text-decoration: underline !important;
-  -webkit-text-decoration-color: #1568a8;
-          text-decoration-color: #1568a8;
+  -webkit-text-decoration-color: #4e79aa;
+          text-decoration-color: #4e79aa;
 }
 
 .main-sec-discussion-form .three .mini-card:hover .lead {
@@ -1993,8 +2104,8 @@ Main Components
 }
 
 .main-sec-discussion-form .two .Nav-tabs .nav-link.active {
-  color: #1568a8;
-  border-bottom: 1px solid #1568a8;
+  color: #4e79aa;
+  border-bottom: 1px solid #4e79aa;
 }
 
 .main-sec-discussion-form .two .main-card {
@@ -2131,7 +2242,7 @@ Main Components
 }
 
 .sec-one-bus_profile .p-abs-2 .long-card .one {
-  background-color: #1568a8;
+  background-color: #4e79aa;
   padding: 3px;
   font-size: 15px !important;
 }
@@ -2464,14 +2575,14 @@ Main Components
 
 .sec-main-bus-listing .two .mini-card .btn-card {
   background-color: white;
-  color: #1568a8;
+  color: #4e79aa;
   width: 150px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
 .sec-main-bus-listing .two .mini-card .btn-card:hover {
-  background-color: #1568a8;
+  background-color: #4e79aa;
   color: white;
 }
 
@@ -2520,7 +2631,7 @@ Main Components
 }
 
 .sec-main-gov-directory .left-card .two ul li {
-  color: #1568a8;
+  color: #4e79aa;
   margin-bottom: 10px;
 }
 
@@ -2559,7 +2670,7 @@ Main Components
 
 .sec-main-gov-directory .two .mini-card .btn-card {
   background-color: white;
-  color: #1568a8;
+  color: #4e79aa;
   width: 200px;
   font-size: 18px;
   height: 50px;
@@ -2578,7 +2689,7 @@ Main Components
 }
 
 .sec-main-gov-directory .two .mini-card .btn-card:hover {
-  background-color: #1568a8;
+  background-color: #4e79aa;
   color: white;
 }
 
@@ -2832,12 +2943,12 @@ body {
   border-radius: 15px !important;
   overflow: hidden;
   background-color: white !important;
-  color: #1568a8;
+  color: #4e79aa;
   border: 1px solid lightgray;
 }
 
 .model-gov-directory .mini-card .haeder {
-  background-color: #1568a8;
+  background-color: #4e79aa;
   color: white;
   text-align: center;
 }

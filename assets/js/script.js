@@ -12,7 +12,7 @@ $(".product-swiper-threee").slick({
   speed: 300,
   dots: false, 
   infinite: true,
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
   prevArrow: `<img src="assets/img/arrrow-l.png" class="arrow-abs-left" >`,
   nextArrow: `<img src="assets/img/arrrow-r.png" class="arrow-abs-right" >`,
