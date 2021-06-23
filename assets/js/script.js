@@ -9,7 +9,7 @@ const closeNav = () => {
 $(".product-swiper-threee").slick({
   dots: true,
   infinite: false,
-  speed: 300,
+  speed: 300,   
   dots: false, 
   infinite: true,
   slidesToShow: 3,
