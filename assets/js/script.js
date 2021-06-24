@@ -6,6 +6,14 @@ const closeNav = () => {
   document.getElementById("mySidenav").style.width = "0";
 };
 
+$('.one-time-slider').slick({
+	dots: true,
+	infinite: true,
+	arrows: false,
+	speed: 300,
+	slidesToShow: 1,
+  });
+
 $(".product-swiper-threee").slick({
   dots: true,
   infinite: false,

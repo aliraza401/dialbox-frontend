@@ -436,6 +436,30 @@
   border-color: #397aab !important;
 }
 
+.sec-services-index .mini-card {
+  text-decoration: none !important;
+  color: black;
+  border-width: 2px !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  background-color: #f5f5f5 !important;
+  position: relative;
+}
+
+.sec-services-index .mini-card .dropdown {
+  position: absolute;
+  top: 5px;
+  right: -2px;
+}
+
+.sec-services-index .arrow-abs-right {
+  top: 61%;
+}
+
+.sec-services-index .arrow-abs-left {
+  top: 61%;
+}
+
 .sec-1-banner .back_img {
   height: 600px;
   background-position: center;
@@ -653,6 +677,40 @@
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.explore-business .one-time-slider .slick-dots {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.explore-business .one-time-slider .slick-dots > * {
+  padding-left: 5px;
+}
+
+.explore-business .slick-dots .slick-active button {
+  background: rgba(109, 109, 109, 0.8);
+}
+
+.explore-business .slick-dots button {
+  border-radius: 50%;
+  background-color: lightgray;
+  overflow: hidden;
+  border-width: 0px;
+  color: lightgray;
+  font-size: 13px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  color: transparent;
+  background: rgba(109, 109, 109, 0.5);
 }
 
 .sec-home-products {
