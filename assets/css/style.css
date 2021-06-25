@@ -218,7 +218,7 @@
 }
 
 .sec-header-two .header-logo-white {
-  width: 130px;
+  width: 120px;
 }
 
 .sec-header-two .input-group {
@@ -230,10 +230,10 @@
 }
 
 .sec-header-two .header-face-img {
-  width: 50px !important;
-  height: 50px !important;
-  border: 3px solid white;
-  border-radius: 10px;
+  width: 30px !important;
+  height: 30px !important;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .sec-header-two .rigt-icons svg {
@@ -838,7 +838,7 @@
 }
 
 .main-sec-discussion-form .one .list-menu-imga img {
-  width: 22px !important;
+  width: 18px !important;
 }
 
 .main-sec-discussion-form .one .back_img {
@@ -943,7 +943,6 @@
 }
 
 .main-sec-discussion-form .two .chat_view_post_buttons button {
-  width: 49.5%;
   display: block;
   margin: 0px;
   border-radius: 0px;
@@ -1100,7 +1099,7 @@
   top: 10%;
   left: 5%;
   width: 280px;
-  background-color: #a29d9f !important;
+  background: rgba(162, 157, 159, 0.85);
   border-radius: 0px !important;
   padding: 20px;
 }
@@ -1140,8 +1139,8 @@
 
 .sec-one-bus_profile .p-abs-2 .long-card .two img,
 .sec-one-bus_profile .p-abs-2 .long-card .two i {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 
 .sec-main-business-profile .one {
@@ -1151,16 +1150,46 @@
 }
 
 .sec-main-business-profile .one .d-1 {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  overflow: hidden;
   border-radius: 40px;
   background-color: #fff;
   padding: 20px !important;
+  padding-right: 0px !important;
+}
+
+.sec-main-business-profile .one .d-1 ::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sec-main-business-profile .one .d-1 ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.sec-main-business-profile .one .d-1 ::-webkit-scrollbar-thumb {
+  background: #397aab;
+  border-radius: 10px;
+}
+
+.sec-main-business-profile .one .d-1 ::-webkit-scrollbar-thumb:hover {
+  background: #397aab;
+}
+
+.sec-main-business-profile .one .d-1 .new-d1 {
+  height: 400px;
+  overflow-y: scroll;
 }
 
 .sec-main-business-profile .one .d-1 img {
   width: 15px !important;
 }
 
-.sec-main-business-profile .one .d-1 > * {
+.sec-main-business-profile .one .new-d1 > * {
   margin-bottom: 15px;
 }
 
@@ -1219,7 +1248,7 @@
 }
 
 .sec-main-business-profile .sec-prod .mini-card .btn-prod {
-  background-color: #faa22f !important;
+  background-color: #397aab !important;
 }
 
 .sec-main-business-profile .sec-prod .mini-card .lead {
@@ -1244,6 +1273,20 @@
   inset: unset !important;
   right: 5px !important;
   top: 0 !important;
+}
+
+.sec-main-business-profile .sec-prod .mini-card .text-center.mb-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sec-main-business-profile .sec-prod .mini-card .text-center.mb-2 img {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .sec-main-business-profile .sec-serv h3::after {
@@ -1292,6 +1335,21 @@
   top: 0 !important;
 }
 
+.sec-main-business-profile .sec-serv img {
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.sec-main-business-profile .sec-serv .arrow-abs-right {
+  right: 0;
+}
+
+.sec-main-business-profile .sec-serv .arrow-abs-left {
+  left: 0;
+}
+
 .sec-main-business-profile .sec-faqs {
   margin-bottom: 2rem !important;
 }
@@ -1314,12 +1372,38 @@
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-.sec-main-business-profile .sec-faqs .mini-card {
-  margin-bottom: 1.5rem !important;
+.sec-main-business-profile .sec-faqs .accordion {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 18px;
+  border: 2px solid #e8e8e8 !important;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.sec-main-business-profile .sec-faqs .mini-card h5 {
-  font-style: 18px !important;
+.sec-main-business-profile .sec-faqs .panel {
+  padding: 0 12px;
+  display: none;
+  overflow: hidden;
+}
+
+.sec-main-business-profile .sec-faqs .accordion:after {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 11px;
+  color: #a32e2e !important;
+  float: right;
+  margin-left: 5px;
+}
+
+.sec-main-business-profile .sec-faqs .active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
 }
 
 .sec-main-business-profile .sec-reviews .nav {
@@ -1347,6 +1431,26 @@
 
 .sec-main-business-profile .sec-reviews .tab-content .review-form .review-img {
   width: 20px !important;
+}
+
+.sec-main-business-profile .sec-reviews .tab-content .review-form2 .user-review-card .back_img {
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px !important;
+}
+
+.sec-main-business-profile .sec-reviews .tab-content .review-form2 .startimages > * {
+  width: 12px;
+  height: 12px;
+}
+
+.sec-main-business-profile .sec-reviews .tab-content .review-form2 .space-beween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sec-1-buslisting .back_img {
@@ -1854,6 +1958,13 @@ body {
   line-height: 1.2;
 }
 
+.dropdown-edit-table * {
+  font-size: 16px;
+  color: lightgray !important;
+  padding: 3px;
+  border: 2px solid lightgray !important;
+}
+
 body p * {
   font-size: 15px !important;
 }
@@ -2009,12 +2120,6 @@ body p * {
         -ms-flex-order: 2 !important;
             order: 2 !important;
   }
-  .main-sec-discussion-form .col-md-3 {
-    width: 22% !important;
-  }
-  .main-sec-discussion-form .col-md-6 {
-    width: 56% !important;
-  }
 }
 
 @media (min-width: 992px) {
@@ -2112,5 +2217,34 @@ li {
 .border-none {
   border-width: 0px !important;
   border-color: transparent;
+}
+
+.sec-main-business-profile .sec-faqs .accordion:after * {
+  color: #a32e2e !important;
+}
+
+.fs16 {
+  font-size: 16px !important;
+}
+
+.fs18 {
+  font-size: 18px !important;
+}
+
+.border-below-1 {
+  border-bottom: 1px solid lightgray;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.invert-1 {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Swiper JS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <!-- remix icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
@@ -24,24 +23,78 @@
 
   <body>
     <section class="sec-header sticky-top bg-white shadow">
-      <!-- Nav Desktop -->
-      <nav class="navbar navbar-expand-lg px-0 navbar-light bg-transparent d-none d-lg-block py-0">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="assets/img/logo@1X.png" class="img img-fluid header-logo" alt="" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <div class="nav-right d-flex align-items-center">
-              <img src="assets/img/header_user.png" class="img w-auto user_img h40px" alt="" />
-              <a href="" class="btn rounded bg-pri pt9px h40px text-white d-flex align-items-center h-100 justify-content-center">Register Now</a>
+      <div class="container px-md-1">
+        <!-- Nav Desktop -->
+        <nav class="navbar navbar-expand-lg px-0 navbar-light bg-transparent d-none d-lg-block py-0">
+          <div class="container px-0">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/logo@1X.png" class="img img-fluid header-logo" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active mb-0" aria-current="page" href="discussion_form.html">DISCUSSION FORM</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> INDUSTRIES </a>
+                  <ul class="dropdown-menu new-drop-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <span class="rounded-0 fs14" href="#">
+                        <input type="text" placeholder="Search in Industry" class="rounded-0 form-control border-none" />
+                      </span>
+                    </li>
+                    <li><a class="dropdown-item fs14" href="#">Accommodation</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Food Services</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Arts, Entertainment</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Agriculture, Forestry</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Fishing and Hunting</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Educational Services</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Construction</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Information</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Fishing and Hunting</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Educational Services</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Construction</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Information</a></li>
+                    <li><a class="dropdown-item fs14" href="#">See All</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ADVERTISMENT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HOW IT WORKS</a>
+                </li>
+              </ul>
+              <div class="nav-right d-flex align-items-center">
+                <img src="assets/img/header_user.png" class="img w-auto height-35 user_img" alt="" />
+                <span class="p-rel heacaer-notice">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M12 2c4.97 0 9 4.043 9 9.031V20H3v-8.969C3 6.043 7.03 2 12 2zM9.5 21h5a2.5 2.5 0 1 1-5 0z" fill="rgba(57, 122, 171,1)" />
+                  </svg>
+                </span>
+                <span class="p-rel heacaer-notice">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z" fill="rgba(57, 122, 171,1)" />
+                </svg>
+              </span>
+                <span class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle height-35 border border-2px border-color-pri px-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EN </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Urdu</a></li>
+                  </ul>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-
-      <div class="container">
+        </nav>
         <!-- Mobile Nav -->
         <div id="mySidenav" class="sidenav shadow">
           <a href="javascript:void(0)" class="closebtn" id="closeBtnn" onclick="closeNav()">&times; </a>
@@ -51,7 +104,7 @@
             <h5 class="name mt-3">Ali Raza</h5>
             <p class="lead">Askari 14, Rawalpindi</p>
 
-            <div href="" class="btn rounded bg-sec text-white w-100 mb-2">Register Now</div>
+            <div class="btn rounded bg-sec text-white w-100 mb-2">Register Now</div>
 
             <ul>
               <li>
@@ -144,13 +197,14 @@
                 <img src="assets/img/phone@1X.png" alt="" />
               </div>
               <div class="img-cover">
-                <img src="assets/img/whatsup@1X.png" alt="" />
+                <img src="assets/img/WhatsApp.svg.png" alt="" />
               </div>
               <div class="img-cover">
-                <img src="assets/img/instagram@1X.png" alt="" />
+                <!-- <img src="assets/img/instagram@1X.png" alt="" /> -->
+                <i class="ri-share-forward-fill" style="font-size: 25px"></i>
               </div>
               <div class="img-cover">
-                <i class="ri-heart-3-fill" style="font-size: 25px"></i>
+                <i class="ri-heart-3-fill" style="font-size: 25px; color: #f34423"></i>
               </div>
             </div>
           </div>
@@ -173,11 +227,11 @@
             <div class="long-card">
               <span class="one text-white"> 4.5 </span>
               <span class="two">
-                <img src="assets/img/review1@1X.png" class="img img-fluid" alt="" />
-                <img src="assets/img/review1@1X.png" class="img img-fluid" alt="" />
-                <img src="assets/img/review1@1X.png" class="img img-fluid" alt="" />
-                <img src="assets/img/review1@1X.png" class="img img-fluid" alt="" />
-                <img src="assets/img/review1@1X.png" class="img img-fluid" alt="" />
+                <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
                 <span class="text-pri"> 45 reviews </span>
               </span>
             </div>
@@ -194,41 +248,86 @@
           <div class="col-md-4 col-lg-3">
             <div class="one">
               <div class="d-1">
-                <div>
-                  <img src="assets/img/phone@1X.png" class="img img-fluid" alt="" />
-                  0333-4532123
-                </div>
-                <div>
-                  <img src="assets/img/map_pin.png" class="img img-fluid" alt="" />
-                  Location
-                </div>
-                <div>
-                  <img src="assets/img/email@1X.png" class="img img-fluid" alt="" />
-                  Email
-                </div>
-                <div>
-                  <img src="assets/img/005071cbf1fdd17673607ecd7b7e88f6@1X.png" class="img img-fluid" alt="" />
-                  www.dialbox.com
-                </div>
-                <div>
-                  <img src="assets/img/industries.jpg" class="img img-fluid" alt="" />
-                  Industry
-                </div>
-                <div>
-                  <img src="assets/img/services@1X.png" class="img img-fluid" alt="" />
-                  Services Areas
-                </div>
-                <div>
-                  <i class="ri-facebook-box-fill"></i>
-                  Facebook
-                </div>
-                <div>
-                  <i class="ri-instagram-line"></i>
-                  Insata
-                </div>
-                <div>
-                  <i class="ri-twitter-line"></i>
-                  Twitter
+                <div class="new-d1">
+                  <div>
+                    <img src="assets/img/phone@1X.png" class="img img-fluid" alt="" />
+                    0333-4532123
+                  </div>
+                  <div>
+                    <img src="assets/img/phone@1X.png" class="img img-fluid" alt="" />
+                    0333-4532123
+                  </div>
+                  <div>
+                    <img src="assets/img/map_pin.png" class="img img-fluid" alt="" />
+                    Location
+                  </div>
+                  <div>
+                    <img src="assets/img/email@1X.png" class="img img-fluid" alt="" />
+                    Email
+                  </div>
+                  <div>
+                    <img src="assets/img/005071cbf1fdd17673607ecd7b7e88f6@1X.png" class="img img-fluid" alt="" />
+                    www.dialbox.com
+                  </div>
+                  <div>
+                    <img src="assets/img/industries.jpg" class="img img-fluid" alt="" />
+                    Industry
+                  </div>
+                  <div>
+                    <img src="assets/img/services@1X.png" class="img img-fluid" alt="" />
+                    Services Areas
+                  </div>
+                  <div>
+                    <i class="ri-facebook-box-fill"></i>
+                    Facebook
+                  </div>
+                  <div>
+                    <i class="ri-instagram-line"></i>
+                    Insata
+                  </div>
+                  <div>
+                    <i class="ri-twitter-line"></i>
+                    Twitter
+                  </div>
+                  <div>
+                    <i class="ri-facebook-box-fill"></i>
+                    Facebook
+                  </div>
+                  <div>
+                    <i class="ri-youtube-line"></i>
+
+                    youtube
+                  </div>
+
+                  <div>
+                    <i class="ri-store-3-line"></i>
+                    Store type
+                  </div>
+
+                  <div>
+                    <i class="ri-calculator-line"></i>
+                    Year Established
+                  </div>
+
+                  <div>
+                    <i class="ri-group-line"></i>
+                    Number of Employees
+                  </div>
+
+                  <div>
+                    <i class="ri-takeaway-fill"></i>
+                    Take Away
+                  </div>
+
+                  <div>
+                    <i class="ri-book-mark-fill"></i>
+                    Booking
+                  </div>
+
+                  <div>
+                    <i class="ri-book-mark-fill"></i>
+                    Appointments
+                  </div>
                 </div>
               </div>
             </div>
@@ -289,8 +388,8 @@
           <div class="col-md-8 col-lg-9">
             <div class="sec-prod mt-5">
               <h3 class="text-sec">Popular Products</h3>
-              <div class="row mt-4">
-                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+              <div class="bus-profile-swiper-threee mt-4">
+                <div class="mb-4 mb-md-0">
                   <div class="mini-card rounded-0 p-3 border text-center">
                     <!-- abs -->
                     <div class="dropdown">
@@ -301,8 +400,8 @@
                         </svg>
                       </span>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                        <li><a class="dropdown-item" href="#">Rate</a></li>
+                        <li><a class="dropdown-item" href="#">Report</a></li>
                       </ul>
                     </div>
 
@@ -310,16 +409,16 @@
                     <p class="lead fw-600 mb-1">T SHIRT</p>
                     <p class="lead fw-600 mb-1">Rs. 500</p>
                     <div class="text-center mb-2">
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
                     </div>
                     <a href="" class="btn d-block rounded-0 mx-3 py-2 btn-prod text-white"> View Detail </a>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="mb-4 mb-md-0">
                   <div class="mini-card rounded-0 p-3 border text-center">
                     <!-- abs -->
                     <div class="dropdown">
@@ -330,24 +429,24 @@
                         </svg>
                       </span>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                        <li><a class="dropdown-item" href="#">Rate</a></li>
+                        <li><a class="dropdown-item" href="#">Report</a></li>
                       </ul>
                     </div>
                     <div class="back_img mb-3" style="background-image: url(assets/img/p1@1X.png)"></div>
                     <p class="lead fw-600 mb-1">T SHIRT</p>
                     <p class="lead fw-600 mb-1">Rs. 500</p>
                     <div class="text-center mb-2">
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
                     </div>
                     <a href="" class="btn d-block rounded-0 mx-3 py-2 btn-prod text-white"> View Detail </a>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4 d-block d-md-none d-lg-block">
+                <div class="">
                   <div class="mini-card rounded-0 p-3 border text-center">
                     <!-- abs -->
                     <div class="dropdown">
@@ -358,30 +457,59 @@
                         </svg>
                       </span>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                        <li><a class="dropdown-item" href="#">Rate</a></li>
+                        <li><a class="dropdown-item" href="#">Report</a></li>
                       </ul>
                     </div>
                     <div class="back_img mb-3" style="background-image: url(assets/img/p1@1X.png)"></div>
                     <p class="lead fw-600 mb-1">T SHIRT</p>
                     <p class="lead fw-600 mb-1">Rs. 500</p>
                     <div class="text-center mb-2">
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                    </div>
+                    <a href="" class="btn d-block rounded-0 mx-3 py-2 btn-prod text-white"> View Detail </a>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="mini-card rounded-0 p-3 border text-center">
+                    <!-- abs -->
+                    <div class="dropdown">
+                      <span class="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path d="M12 3c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                        </svg>
+                      </span>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Rate</a></li>
+                        <li><a class="dropdown-item" href="#">Report</a></li>
+                      </ul>
+                    </div>
+                    <div class="back_img mb-3" style="background-image: url(assets/img/p1@1X.png)"></div>
+                    <p class="lead fw-600 mb-1">T SHIRT</p>
+                    <p class="lead fw-600 mb-1">Rs. 500</p>
+                    <div class="text-center mb-2">
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid review-img" alt="" />
                     </div>
                     <a href="" class="btn d-block rounded-0 mx-3 py-2 btn-prod text-white"> View Detail </a>
                   </div>
                 </div>
               </div>
+              <p class="text-right mt-2 text-pri fs16 cursor-pointer">View All</p>
             </div>
 
             <div class="sec-serv mt-5">
               <h3 class="text-sec">Popular Services</h3>
-              <div class="row mt-4">
-                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+              <div class="bus-profile-swiper-threee mt-4">
+                <div class="">
                   <div class="mini-card rounded-0 p-3 border text-center">
                     <!-- abs -->
                     <div class="dropdown">
@@ -397,11 +525,18 @@
                       </ul>
                     </div>
                     <h4>Service Name</h4>
-                    <p class="mb-2">Starting Cost</p>
-                    <a href="" class="text-pri fw-600">View Detail</a>
+                    <p class="mb-2">Starting Cost: Rs 1500</p>
+                    <div class="images d-flex justify-content-center my-2">
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                    </div>
+                    <a href="" class="text-pri fw-600 mt-2">View Detail</a>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="">
                   <div class="mini-card rounded-0 p-3 border text-center">
                     <!-- abs -->
                     <div class="dropdown">
@@ -412,16 +547,23 @@
                         </svg>
                       </span>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                        <li><a class="dropdown-item" href="#">Rate</a></li>
+                        <li><a class="dropdown-item" href="#">Report</a></li>
                       </ul>
                     </div>
                     <h4>Service Name</h4>
-                    <p class="mb-2">Starting Cost</p>
-                    <a href="" class="text-pri fw-600">View Detail</a>
+                    <p class="mb-2">Starting Cost: Rs 1500</p>
+                    <div class="images d-flex justify-content-center my-2">
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                    </div>
+                    <a href="" class="text-pri fw-600 mt-2">View Detail</a>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="">
                   <div class="mini-card rounded-0 p-3 border text-center">
                     <!-- abs -->
                     <div class="dropdown">
@@ -432,34 +574,64 @@
                         </svg>
                       </span>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                        <li><a class="dropdown-item" href="#">Rate</a></li>
+                        <li><a class="dropdown-item" href="#">Report</a></li>
                       </ul>
                     </div>
                     <h4>Service Name</h4>
-                    <p class="mb-2">Starting Cost</p>
-                    <a href="" class="text-pri fw-600">View Detail</a>
+                    <p class="mb-2">Starting Cost: Rs 1500</p>
+                    <div class="images d-flex justify-content-center my-2">
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                    </div>
+                    <a href="" class="text-pri fw-600 mt-2">View Detail</a>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="mini-card rounded-0 p-3 border text-center">
+                    <!-- abs -->
+                    <div class="dropdown">
+                      <span class="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path d="M12 3c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                        </svg>
+                      </span>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Rate</a></li>
+                        <li><a class="dropdown-item" href="#">Report</a></li>
+                      </ul>
+                    </div>
+                    <h4>Service Name</h4>
+                    <p class="mb-2">Starting Cost: Rs 1500</p>
+                    <div class="images d-flex justify-content-center my-2">
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                      <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
+                    </div>
+                    <a href="" class="text-pri fw-600 mt-2">View Detail</a>
                   </div>
                 </div>
               </div>
+              <p class="text-right mt-2 text-pri fs16 cursor-pointer">View All</p>
             </div>
 
             <div class="sec-faqs mt-5">
               <h3 class="text-sec mb-3">Frequently Asked Question</h3>
 
-              <div class="mini-card">
-                <h5>1. What are its hours of operation ?</h5>
-                <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, cupiditate deleniti! Impedit nobis fuga voluptates?</p>
+              <button class="accordion shadow-sm text-pri mb-2 mt-2">Section 1</button>
+              <div class="panel">
+                <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
 
-              <div class="mini-card">
-                <h5>2. What are its hours of operation ?</h5>
-                <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, cupiditate deleniti! Impedit nobis fuga voluptates?</p>
-              </div>
-
-              <div class="mini-card">
-                <h5>3. What are its hours of operation ?</h5>
-                <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, cupiditate deleniti! Impedit nobis fuga voluptates?</p>
+              <button class="accordion shadow-sm text-pri mb-2 mt-2">Section 2</button>
+              <div class="panel">
+                <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
 
@@ -481,28 +653,70 @@
                   <div class="review-form">
                     <h4>Add Review</h4>
                     <div class="mb-2">
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/review-star.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/review-star.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/review-star.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/review-star.png" class="img img-fluid review-img" alt="" />
+                      <img src="assets/img/review-star.png" class="img img-fluid review-img" alt="" />
                     </div>
                     <textarea name="" id="" rows="6" class="mb-3 form-control" placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, recusandae minima. Blanditiis eum quaerat in! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, recusandae minima. Blanditiis eum quaerat in!"></textarea>
                     <a href="" class="btn mb-4 px-5 py-2 rounded bg-pri text-white"> Submit </a>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <div class="review-form">
-                    <h4>Add Product</h4>
-                    <div class="mb-2">
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
-                      <img src="assets/img/review1@1X.png" class="img img-fluid review-img" alt="" />
+                  <div class="review-form2">
+                    <div class="user-review-card mb-5">
+                      <div class="d-flex">
+                        <div class="back_img me-3" style="background-image: url('assets//img/face_img.jpeg')"></div>
+                        <div class="w-100">
+                          <div class="d-flex space-beween w-100">
+                            <p class="fw-600">
+                              GANESH
+                              <span class="startimages">
+                                <img src="assets/img/star@1X.png" alt="" />
+                                <img src="assets/img/star@1X.png" alt="" />
+                                <img src="assets/img/star@1X.png" alt="" />
+                                <img src="assets/img/star@1X.png" alt="" />
+                                <img src="assets/img/star@1X.png" alt="" />
+                              </span>
+                            </p>
+                            <p class="fw-light d-none d-md-block">14th December, 2020</p>
+                          </div>
+                          <p class="fw-light">Very Good</p>
+
+                          <div class="row border-below-1">
+                            <div class="col-md-3"><i class="ri-thumb-up-line"></i> Like</div>
+                            <div class="col-md-3"><i class="ri-chat-3-fill"></i> Comment</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <textarea name="" id="" rows="6" class="mb-3 form-control" placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, recusandae minima. Blanditiis."></textarea>
-                    <a href="" class="btn mb-4 px-5 py-2 rounded bg-pri text-white"> Submit </a>
+                    <div class="user-review-card mb-5">
+                      <div class="d-flex">
+                        <div class="back_img me-3" style="background-image: url('assets//img/face_img.jpeg')"></div>
+                        <div class="w-100">
+                          <div class="d-flex space-beween w-100">
+                            <p class="fw-600">
+                              GANESH
+                              <span class="startimages">
+                                <img src="assets/img/star@1X.png" alt="" />
+                                <img src="assets/img/star@1X.png" alt="" />
+                                <img src="assets/img/star@1X.png" alt="" />
+                                <img src="assets/img/star@1X.png" alt="" />
+                                <img src="assets/img/star@1X.png" alt="" />
+                              </span>
+                            </p>
+                            <p class="fw-light d-none d-md-block">14th December, 2020</p>
+                          </div>
+                          <p class="fw-light">Very Good</p>
+
+                          <div class="row border-below-1">
+                            <div class="col-md-3"><i class="ri-thumb-up-line"></i> Like</div>
+                            <div class="col-md-3"><i class="ri-chat-3-fill"></i> Comment</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -514,23 +728,22 @@
 
     <section class="sec-footer pt-5 mb-0 p">
       <div class="footer-top">
-        <div class="container">
+        <div class="container px-md-5">
           <div class="row mb-4">
-            <div class="col-lg-6 border-roght- mb-md-4 mb-lg-0">
+            <div class="col-lg-6 border-roght- pe-md-5 mb-md-4 mb-lg-0">
               <img src="assets/img/logo-white.png" class="img img-fluid mb-4 logo-white" alt="" />
-              <p>Welcome to Dialbox, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and purchasing activities. We take pride in our iconic customer support number, +92 51 0000000 and the fact that we own a strong hold on local business information in Pakistan.</p>
-              <div class="input-group mb-3">
-                <input type="text" class="form-control border-sec" placeholder="Enter your mobile number" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-                <span class="input-group-text bg-sec text-white border-sec" id="basic-addon2">Send App Link</span>
+              <p class="mb-4 fs14 text-justify">Welcome to Dialbox, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and purchasing activities. We take pride in our iconic customer support number, +92 51 0000000 and the fact that we own a strong hold on local business information in Pakistan.</p>
+              <div class="input-group shadow-sm mb-3">
+                <input type="text" class="form-control fs14 border-sec" placeholder="Signup for dialbox updates" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                <span class="input-group-text bg-sec text-white px-3 fs14 border-sec" id="basic-addon2">Subscribe</span>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 my-4 my-md-0">
+            <div class="col-lg-3 col-md-6 my-4 my-md-0 ps-lg-4">
               <h4>Our Company</h4>
               <a href="">About Us</a>
               <a href="">Careers</a>
               <a href="">Press</a>
               <a href="">Terms & Conditions</a>
-              <a href="">Privacy Policy</a>
               <img src="assets/img/apple store.png" class="img img-fluid img-mobi mb-4 d-none d-md-inline-block" alt="" />
             </div>
             <div class="col-lg-3 col-md-6">
@@ -539,7 +752,6 @@
               <a href="">Feedback</a>
               <a href="">Report</a>
               <a href="">Contact Us</a>
-              <a href="" class="visibility-hidden d-none d-md-block">X</a>
               <img src="assets/img/goolge-play.png" class="img img-fluid img-mobi mb-4" alt="" />
               <img src="assets/img/apple store.png" class="img img-fluid img-mobi mb-4 d-inline-block d-md-none" alt="" />
             </div>
@@ -547,7 +759,7 @@
         </div>
       </div>
 
-       <div class="footer-bottom mt-0">
+      <div class="footer-bottom mt-0">
         <div class="container sec-bottom-footer">
           <div class="d-block d-md-flex text-center justify-content-between py-4">
             <span>© copyright Dialboxx 2021 . All Right Reserved</span>
@@ -558,9 +770,25 @@
     </section>
 
     <script src="assets/js/jquery-3.6.0.slim.js"></script>
+    <script src="assets/js/jquery.menu-aim.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/script.js" defer></script>
+    <script>
+      // faqs
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
