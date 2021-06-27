@@ -1132,7 +1132,6 @@
 }
 
 .sec-one-bus_profile .p-abs-2 .long-card .two {
-  background-color: white;
   padding: 3px;
   font-size: 15px !important;
 }
@@ -1199,9 +1198,39 @@
 }
 
 .sec-main-business-profile .two .d-1 {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  overflow: hidden;
   border-radius: 40px;
   background-color: #fff;
   padding: 20px !important;
+  padding-right: 0px !important;
+}
+
+.sec-main-business-profile .two .d-1 ::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sec-main-business-profile .two .d-1 ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.sec-main-business-profile .two .d-1 ::-webkit-scrollbar-thumb {
+  background: #397aab;
+  border-radius: 10px;
+}
+
+.sec-main-business-profile .two .d-1 ::-webkit-scrollbar-thumb:hover {
+  background: #397aab;
+}
+
+.sec-main-business-profile .two .d-1 .new-d-2 {
+  height: 650px;
+  overflow-y: scroll;
 }
 
 .sec-main-business-profile .two .d-1 h5 {
@@ -1289,6 +1318,31 @@
   margin-right: 2px;
 }
 
+.sec-main-business-profile .sec-prod .long-card {
+  border-radius: 0px;
+  margin-top: 10px;
+  background-color: white !important;
+}
+
+.sec-main-business-profile .sec-prod .long-card .one {
+  padding: 3px;
+  background-color: white !important;
+  font-size: 15px !important;
+}
+
+.sec-main-business-profile .sec-prod .long-card .two {
+  background-color: white !important;
+  padding: 3px;
+  font-size: 15px !important;
+}
+
+.sec-main-business-profile .sec-prod .long-card .two img,
+.sec-main-business-profile .sec-prod .long-card .two i {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
 .sec-main-business-profile .sec-serv h3::after {
   content: " ";
   display: block;
@@ -1338,16 +1392,47 @@
 .sec-main-business-profile .sec-serv img {
   width: 20px;
   height: 20px;
-  margin-left: 2px;
-  margin-right: 2px;
 }
 
 .sec-main-business-profile .sec-serv .arrow-abs-right {
-  right: 0;
+  top: 58%;
+  width: 40px !important;
+  height: 40px !important;
 }
 
 .sec-main-business-profile .sec-serv .arrow-abs-left {
-  left: 0;
+  top: 58%;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.sec-main-business-profile .sec-serv .long-card {
+  border-radius: 0px;
+  margin-top: 10px;
+  background-color: inherit !important;
+}
+
+.sec-main-business-profile .sec-serv .long-card .one {
+  padding: 3px;
+  background-color: inherit !important;
+  font-size: 15px !important;
+}
+
+.sec-main-business-profile .sec-serv .long-card .two {
+  background-color: inherit !important;
+  padding: 3px;
+  font-size: 15px !important;
+}
+
+.sec-main-business-profile .sec-serv .long-card .two img,
+.sec-main-business-profile .sec-serv .long-card .two i {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+.sec-main-business-profile .sec-serv .long-card span {
+  background-color: inherit !important;
 }
 
 .sec-main-business-profile .sec-faqs {
