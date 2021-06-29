@@ -24,24 +24,79 @@
 
   <body>
     <section class="sec-header sticky-top bg-white shadow">
-      <!-- Nav Desktop -->
-      <nav class="navbar navbar-expand-lg px-0 navbar-light bg-transparent d-none d-lg-block py-0">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="assets/img/logo@1X.png" class="img img-fluid header-logo" alt="" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <div class="nav-right d-flex align-items-center">
-              <img src="assets/img/header_user.png" class="img w-auto user_img h40px" alt="" />
-              <a href="" class="btn rounded bg-pri pt9px h40px text-white d-flex align-items-center h-100 justify-content-center">Register Now</a>
+      <div class="container px-md-1">
+        <!-- Nav Desktop -->
+        <nav class="navbar navbar-expand-lg px-0 navbar-light bg-transparent d-none d-lg-block py-0">
+          <div class="container px-0">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/logo@1X.png" class="img img-fluid header-logo" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active mb-0" aria-current="page" href="discussion_form.html">DISCUSSION FORM</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> INDUSTRIES </a>
+                  <ul class="dropdown-menu new-drop-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <span class="rounded-0 fs14" href="#">
+                        <input type="text" placeholder="Search in Industry" class="rounded-0 form-control border-none" />
+                      </span>
+                    </li>
+                    <li><a class="dropdown-item fs14" href="#">Accommodation</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Food Services</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Arts, Entertainment</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Agriculture, Forestry</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Fishing and Hunting</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Educational Services</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Construction</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Information</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Fishing and Hunting</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Educational Services</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Construction</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Information</a></li>
+                    <li><a class="dropdown-item fs14" href="#">See All</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ADVERTISMENT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HOW IT WORKS</a>
+                </li>
+              </ul>
+              <div class="nav-right d-flex align-items-center">
+                <span class="p-rel heacaer-notice">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M12 2c4.97 0 9 4.043 9 9.031V20H3v-8.969C3 6.043 7.03 2 12 2zM9.5 21h5a2.5 2.5 0 1 1-5 0z" fill="rgba(57, 122, 171,1)" />
+                  </svg>
+                </span>
+                <span class="p-rel heacaer-notice">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z" fill="rgba(57, 122, 171,1)" />
+                </svg>
+              </span>
+              <img src="assets/img/header_user.png" class="img w-auto height-35 user_img" alt="" />
+
+                <span class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle height-35 border border-2px border-color-pri px-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EN </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Urdu</a></li>
+                  </ul>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-
-      <div class="container">
+        </nav>
         <!-- Mobile Nav -->
         <div id="mySidenav" class="sidenav shadow">
           <a href="javascript:void(0)" class="closebtn" id="closeBtnn" onclick="closeNav()">&times; </a>
@@ -51,7 +106,7 @@
             <h5 class="name mt-3">Ali Raza</h5>
             <p class="lead">Askari 14, Rawalpindi</p>
 
-            <div href="" class="btn rounded bg-sec text-white w-100 mb-2">Register Now</div>
+            <div class="btn rounded bg-sec text-white w-100 mb-2">Register Now</div>
 
             <ul>
               <li>
@@ -132,6 +187,7 @@
       </div>
     </section>
 
+
     <div class="sec-1-category">
       <div class="container-fluid px-0">
         <div class="back_img" style="background-image: url('assets/img/banner-categ@1X.png')">
@@ -147,22 +203,28 @@
       <div class="container">
         <div class="text-center text-pri">
           <h2>Categories List</h2>
-          <p class="">Lorem Ipsum is simply dummy text
+          <!-- <p class="">Lorem Ipsum is simply dummy text
             of the printing and typesetting 
-           industry.</p>
+           industry.</p> -->
+           <select class="form-select rounded-pill text-pri w-md-25 m-auto" aria-label="Default select example">
+            <option selected>Select Category</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
         </div>
 
 
         <div class="row mt-5">
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/tyre@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Type</h5>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3  mb-5">
+          <div class="col-md-3 col-lg-3  mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/car-repairing@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Car Repairing</h5>
@@ -170,71 +232,70 @@
           </div>
 
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/battrey@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Battries</h5>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/car-wash@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Car Washing</h5>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/bike-services@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Bike Repairing</h5>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-12">
+            <div class="text-center">
+              <div class="btn btn-lg bg-pri text-white shadow mb-5 px-5 rounded-0">Load More...</div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/car-accessories@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Accessories</h5>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/tyre@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Type</h5>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3 mb-5">
-            <div class="mini-card p-4 py-5 shadow text-center ">
-              <img src="assets/img/car-repairing@1X.png" class="img img-fluid mb-4" alt="">
-              <h5>Car Repairing</h5>
-            </div>
-          </div>
 
-
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/battrey@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Battries</h5>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/car-wash@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Car Washing</h5>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/bike-services@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Bike Repairing</h5>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/car-accessories@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Accessories</h5>
@@ -242,14 +303,14 @@
           </div>
           
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/tyre@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Type</h5>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/car-repairing@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Car Repairing</h5>
@@ -257,14 +318,14 @@
           </div>
 
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/battrey@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Battries</h5>
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3 mb-5">
+          <div class="col-md-3 col-lg-3 mb-5">
             <div class="mini-card p-4 py-5 shadow text-center ">
               <img src="assets/img/car-wash@1X.png" class="img img-fluid mb-4" alt="">
               <h5>Car Washing</h5>
@@ -273,9 +334,7 @@
 
         </div>
 
-        <div class="text-center">
-          <div class="btn btn-lg bg-pri text-white shadow mb-5 px-5 rounded-0">Load More...</div>
-        </div>
+
 
       </div>
     </div>
@@ -284,23 +343,22 @@
 
     <section class="sec-footer pt-5 mb-0 p">
       <div class="footer-top">
-        <div class="container">
+        <div class="container px-md-5">
           <div class="row mb-4">
-            <div class="col-lg-6 border-roght- mb-md-4 mb-lg-0">
+            <div class="col-lg-6 border-roght- pe-md-5 mb-md-4 mb-lg-0">
               <img src="assets/img/logo-white.png" class="img img-fluid mb-4 logo-white" alt="" />
-              <p>Welcome to Dialbox, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and purchasing activities. We take pride in our iconic customer support number, +92 51 0000000 and the fact that we own a strong hold on local business information in Pakistan.</p>
-              <div class="input-group mb-3">
-                <input type="text" class="form-control border-sec" placeholder="Enter your mobile number" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-                <span class="input-group-text bg-sec text-white border-sec" id="basic-addon2">Send App Link</span>
+              <p class="mb-4 fs14 text-justify">Welcome to Dialbox, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and purchasing activities. We take pride in our iconic customer support number, +92 51 0000000 and the fact that we own a strong hold on local business information in Pakistan.</p>
+              <div class="input-group shadow-sm mb-3">
+                <input type="text" class="form-control fs14 border-sec" placeholder="Signup for dialbox updates" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                <span class="input-group-text bg-sec text-white px-3 fs14 border-sec" id="basic-addon2">Subscribe</span>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 my-4 my-md-0">
+            <div class="col-lg-3 col-md-6 my-4 my-md-0 ps-lg-4">
               <h4>Our Company</h4>
               <a href="">About Us</a>
               <a href="">Careers</a>
               <a href="">Press</a>
               <a href="">Terms & Conditions</a>
-              <a href="">Privacy Policy</a>
               <img src="assets/img/apple store.png" class="img img-fluid img-mobi mb-4 d-none d-md-inline-block" alt="" />
             </div>
             <div class="col-lg-3 col-md-6">
@@ -309,7 +367,6 @@
               <a href="">Feedback</a>
               <a href="">Report</a>
               <a href="">Contact Us</a>
-              <a href="" class="visibility-hidden d-none d-md-block">X</a>
               <img src="assets/img/goolge-play.png" class="img img-fluid img-mobi mb-4" alt="" />
               <img src="assets/img/apple store.png" class="img img-fluid img-mobi mb-4 d-inline-block d-md-none" alt="" />
             </div>

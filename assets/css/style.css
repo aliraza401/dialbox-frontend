@@ -1601,7 +1601,7 @@
 }
 
 .sec-2-bus-listing {
-  background-color: #e1dcdd;
+  background: rgba(225, 220, 221, 0.5);
   padding-top: 14px;
   padding-bottom: 14px;
 }
@@ -1613,6 +1613,11 @@
 
 .sec-main-bus-listing .left-card .one ul {
   list-style-image: url(../img/list_img.png);
+}
+
+.sec-main-bus-listing .left-card .one ul li {
+  color: #397aab !important;
+  cursor: pointer;
 }
 
 .sec-main-bus-listing .two .mini-card {
@@ -1660,6 +1665,30 @@
   color: white;
 }
 
+.sec-main-bus-listing .two .long-card {
+  border-radius: 0px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+.sec-main-bus-listing .two .long-card .one {
+  background-color: transparent;
+  padding: 3px;
+  font-size: 15px !important;
+}
+
+.sec-main-bus-listing .two .long-card .two {
+  padding: 3px;
+  font-size: 15px !important;
+  background-color: transparent;
+}
+
+.sec-main-bus-listing .two .long-card .two img,
+.sec-main-bus-listing .two .long-card .two i {
+  width: 18px;
+  height: 18px;
+}
+
 .sec-1-category .back_img {
   background-position: center;
   background-size: cover;
@@ -1685,13 +1714,19 @@
 }
 
 .sec-2-category .mini-card img {
-  height: 100px;
+  height: 80px;
   width: auto;
 }
 
 .sec-2-category .mini-card:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+@media (min-width: 992px) {
+  .sec-2-category .col-md-3 {
+    width: 20% !important;
+  }
 }
 
 .sec-main-gov-directory .left-card {
@@ -2029,7 +2064,7 @@ body {
 
 .model-gov-directory .mini-card ul {
   list-style-type: none;
-  padding-left: 10px;
+  padding-left: 5px;
   margin-top: 15px;
   font-size: 14px !important;
 }
@@ -2220,6 +2255,9 @@ body p * {
   }
   .display-4 {
     font-size: 3rem;
+  }
+  .w-md-25 {
+    width: 25% !important;
   }
 }
 
