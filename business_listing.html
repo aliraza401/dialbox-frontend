@@ -79,12 +79,12 @@
                   </svg>
                 </span>
                 <span class="p-rel heacaer-notice">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z" fill="rgba(57, 122, 171,1)" />
-                </svg>
-              </span>
-              <img src="assets/img/header_user.png" class="img w-auto height-35 user_img" alt="" />
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z" fill="rgba(57, 122, 171,1)" />
+                  </svg>
+                </span>
+                <img src="assets/img/header_user.png" class="img w-auto height-35 user_img" alt="" />
 
                 <span class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle height-35 border border-2px border-color-pri px-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EN </a>
@@ -187,8 +187,7 @@
       </div>
     </section>
 
-
-    <div class="sec-1-buslisting">
+    <div class="sec-1-buslisting"> 
       <div class="container-fluid px-0">
         <div class="back_img" style="background-image: url('assets/img/banner_listing.png')">
           <div class="p-abs-1">
@@ -205,13 +204,18 @@
 
     <div class="sec-2-bus-listing">
       <div class="container">
-        <div class="d-flex justify-content-around">
-          <!-- <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4">Top Results</div> -->
-          <!-- <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4">Popular</div> -->
-          <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4 d-none d-md-block">Location</div>
-          <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4 d-none d-md-block">Open Today</div>
-          <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4 d-none d-lg-block">Top Rating</div>
-          <!-- <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4 d-none d-lg-block">Available Now</div> -->
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-9">
+            <div class="d-flex justify-content-between">
+              <!-- <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4">Top Results</div> -->
+              <!-- <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4">Popular</div> -->
+              <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4 d-none d-md-block">Location</div>
+              <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4 d-none d-md-block">Open Today</div>
+              <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4 d-none d-lg-block">Top Rating</div>
+              <!-- <div class="btn bg-white text-sec shadow rounded-0 py-2 px-4 d-none d-lg-block">Available Now</div> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -220,7 +224,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 d-none d-lg-block bg-section h-100">
-            <div class="left-card pt-5">
+            <div class="left-card pt-4 mt-4">
               <div class="one">
                 <h5 class="text-sec">Doctors</h5>
                 <ul>
@@ -257,11 +261,6 @@
                 </ul>
                 <p class="text-sec cursor-pointer">See More...</p>
               </div>
-              <div class="two">
-                <h5 class="text-pri">Popular Areas</h5>
-                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                <p class="text-sec cursor-pointer">See More...</p>
-              </div>
             </div>
           </div>
           <div class="col-lg-9">
@@ -269,152 +268,167 @@
               <div class="mini-card mt-4">
                 <div class="row">
                   <div class="col-md-4 mb-3">
-                    <div class="back_img" style="background-image: url('assets/img/pic1@1X.png');"></div>
+                    <div class="back_img" style="background-image: url('assets/img/pic1@1X.png')"></div>
                   </div>
                   <div class="col-md-8">
-                    <h4 class="text-pri">Business Name</h4>
-                    <div class="long-card  mb-3 text-pri">
-                      <span class="one  text-pri "> 4.5 </span>
-                      <span class="two ">
+                    <h4 class="text-pri d-flex justify-content-between">
+                      <span>Business Name</span>
+                      <div>
+                        <i class="ri-heart-line"></i>
+                      </div>
+                    </h4>
+                    <div class="long-card mb-3 text-pri">
+                      <span class="one text-pri"> 4.5 </span>
+                      <span class="two">
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
                         <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
-                        <span class="text-pri "> 45 reviews </span>
+                        <span class="text-pri"> 45 reviews </span>
                       </span>
                     </div>
                     <p class="mb-1">
-                      <img src="assets/img/location@1X.png" class="img img-fluid cell-img" alt="">
+                      <img src="assets/img/location@1X.png" class="img img-fluid cell-img" alt="" />
                       Islamabad
                     </p>
                     <p class="mb-2">
-                      <img src="assets/img/phone@1X.png" class="img img-fluid  cell-img" alt="">
+                      <img src="assets/img/phone@1X.png" class="img img-fluid cell-img" alt="" />
                       03402204403
                     </p>
 
-                    <img src="assets/img/verified@1X (1).png" class="img img-fluid mb-3 verified-img" alt="">
+                    <img src="assets/img/verified@1X (1).png" class="img img-fluid mb-3 verified-img" alt="" />
 
                     <div class="imgs">
-                      <a href="" class="btn btn-card rounded-0 py-2 me-2 shadow">Call us</a>
-                      <a href="" class="btn btn-card rounded-0 py-2 ms-2 shadow">Message</a>
+                      <a href="" class="btn btn-card rounded-0 py-2 me-2 shadow"> <i class="ri-phone-fill"></i> Call us</a>
+                      <a href="" class="btn btn-card rounded-0 py-2 ms-2 shadow"> <i class="ri-chat-1-line"></i> Message</a>
                     </div>
-
                   </div>
                 </div>
               </div>
               <div class="mini-card mt-4">
                 <div class="row">
                   <div class="col-md-4 mb-3">
-                    <div class="back_img" style="background-image: url('assets/img/pic1@1X.png');"></div>
+                    <div class="back_img" style="background-image: url('assets/img/pic1@1X.png')"></div>
                   </div>
                   <div class="col-md-8">
-                    <h4 class="text-pri">Business Name</h4>
-                    <div class="long-card  mb-3 text-pri">
-                      <span class="one  text-pri "> 4.5 </span>
-                      <span class="two ">
+                    <h4 class="text-pri d-flex justify-content-between">
+                      <span>Business Name</span>
+                      <div>
+                        <i class="ri-heart-line"></i>
+                      </div>
+                    </h4>
+                    <div class="long-card mb-3 text-pri">
+                      <span class="one text-pri"> 4.5 </span>
+                      <span class="two">
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
                         <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
-                        <span class="text-pri "> 45 reviews </span>
+                        <span class="text-pri"> 45 reviews </span>
                       </span>
                     </div>
                     <p class="mb-1">
-                      <img src="assets/img/location@1X.png" class="img img-fluid cell-img" alt="">
+                      <img src="assets/img/location@1X.png" class="img img-fluid cell-img" alt="" />
                       Islamabad
                     </p>
                     <p class="mb-2">
-                      <img src="assets/img/phone@1X.png" class="img img-fluid  cell-img" alt="">
+                      <img src="assets/img/phone@1X.png" class="img img-fluid cell-img" alt="" />
                       03402204403
                     </p>
 
-                    <img src="assets/img/verified@1X (1).png" class="img img-fluid mb-3 verified-img" alt="">
+                    <img src="assets/img/verified@1X (1).png" class="img img-fluid mb-3 verified-img" alt="" />
 
                     <div class="imgs">
-                      <a href="" class="btn btn-card rounded-0 py-2 me-2 shadow">Call us</a>
-                      <a href="" class="btn btn-card rounded-0 py-2 ms-2 shadow">Message</a>
+                      <a href="" class="btn btn-card rounded-0 py-2 me-2 shadow"> <i class="ri-phone-fill"></i> Call us</a>
+                      <a href="" class="btn btn-card rounded-0 py-2 ms-2 shadow"> <i class="ri-chat-1-line"></i> Message</a>
                     </div>
-
                   </div>
                 </div>
               </div>
               <div class="mini-card mt-4">
                 <div class="row">
                   <div class="col-md-4 mb-3">
-                    <div class="back_img" style="background-image: url('assets/img/pic1@1X.png');"></div>
+                    <div class="back_img" style="background-image: url('assets/img/pic1@1X.png')"></div>
                   </div>
                   <div class="col-md-8">
-                    <h4 class="text-pri">Business Name</h4>
-                    <div class="long-card  mb-3 text-pri">
-                      <span class="one  text-pri "> 4.5 </span>
-                      <span class="two ">
+                    <h4 class="text-pri d-flex justify-content-between">
+                      <span>Business Name</span>
+                      <div>
+                        <i class="ri-heart-line"></i>
+                      </div>
+                    </h4>
+                    <div class="long-card mb-3 text-pri">
+                      <span class="one text-pri"> 4.5 </span>
+                      <span class="two">
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
                         <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
-                        <span class="text-pri "> 45 reviews </span>
+                        <span class="text-pri"> 45 reviews </span>
                       </span>
                     </div>
                     <p class="mb-1">
-                      <img src="assets/img/location@1X.png" class="img img-fluid cell-img" alt="">
+                      <img src="assets/img/location@1X.png" class="img img-fluid cell-img" alt="" />
                       Islamabad
                     </p>
                     <p class="mb-2">
-                      <img src="assets/img/phone@1X.png" class="img img-fluid  cell-img" alt="">
+                      <img src="assets/img/phone@1X.png" class="img img-fluid cell-img" alt="" />
                       03402204403
                     </p>
 
-                    <img src="assets/img/verified@1X (1).png" class="img img-fluid mb-3 verified-img" alt="">
+                    <img src="assets/img/verified@1X (1).png" class="img img-fluid mb-3 verified-img" alt="" />
 
                     <div class="imgs">
-                      <a href="" class="btn btn-card rounded-0 py-2 me-2 shadow">Call us</a>
-                      <a href="" class="btn btn-card rounded-0 py-2 ms-2 shadow">Message</a>
+                      <a href="" class="btn btn-card rounded-0 py-2 me-2 shadow"> <i class="ri-phone-fill"></i> Call us</a>
+                      <a href="" class="btn btn-card rounded-0 py-2 ms-2 shadow"> <i class="ri-chat-1-line"></i> Message</a>
                     </div>
-
                   </div>
                 </div>
               </div>
               <div class="mini-card mt-4">
                 <div class="row">
                   <div class="col-md-4 mb-3">
-                    <div class="back_img" style="background-image: url('assets/img/pic1@1X.png');"></div>
+                    <div class="back_img" style="background-image: url('assets/img/pic1@1X.png')"></div>
                   </div>
                   <div class="col-md-8">
-                    <h4 class="text-pri">Business Name</h4>
-                    <div class="long-card  mb-3 text-pri">
-                      <span class="one  text-pri "> 4.5 </span>
-                      <span class="two ">
+                    <h4 class="text-pri d-flex justify-content-between">
+                      <span>Business Name</span>
+                      <div>
+                        <i class="ri-heart-line"></i>
+                      </div>
+                    </h4>
+                    <div class="long-card mb-3 text-pri">
+                      <span class="one text-pri"> 4.5 </span>
+                      <span class="two">
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/review-star.png" class="img img-fluid" alt="" />
                         <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
                         <img src="assets/img/star@1X.png" class="img img-fluid" alt="" />
-                        <span class="text-pri "> 45 reviews </span>
+                        <span class="text-pri"> 45 reviews </span>
                       </span>
                     </div>
                     <p class="mb-1">
-                      <img src="assets/img/location@1X.png" class="img img-fluid cell-img" alt="">
+                      <img src="assets/img/location@1X.png" class="img img-fluid cell-img" alt="" />
                       Islamabad
                     </p>
                     <p class="mb-2">
-                      <img src="assets/img/phone@1X.png" class="img img-fluid  cell-img" alt="">
+                      <img src="assets/img/phone@1X.png" class="img img-fluid cell-img" alt="" />
                       03402204403
                     </p>
 
-                    <img src="assets/img/verified@1X (1).png" class="img img-fluid mb-3 verified-img" alt="">
+                    <img src="assets/img/verified@1X (1).png" class="img img-fluid mb-3 verified-img" alt="" />
 
                     <div class="imgs">
-                      <a href="" class="btn btn-card rounded-0 py-2 me-2 shadow">Call us</a>
-                      <a href="" class="btn btn-card rounded-0 py-2 ms-2 shadow">Message</a>
+                      <a href="" class="btn btn-card rounded-0 py-2 me-2 shadow"> <i class="ri-phone-fill"></i> Call us</a>
+                      <a href="" class="btn btn-card rounded-0 py-2 ms-2 shadow"> <i class="ri-chat-1-line"></i> Message</a>
                     </div>
-
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

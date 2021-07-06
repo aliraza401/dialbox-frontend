@@ -1723,6 +1723,14 @@
           transform: scale(1.03);
 }
 
+.bg-secondaryLight {
+  background-color: #dfdfdf;
+}
+
+.mt20px {
+  margin-top: 20px !important;
+}
+
 @media (min-width: 992px) {
   .sec-2-category .col-md-3 {
     width: 20% !important;
@@ -2259,6 +2267,9 @@ body p * {
   .w-md-25 {
     width: 25% !important;
   }
+  .w-md-31 {
+    width: 31% !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -2369,5 +2380,9 @@ li {
 
 .overflow-hidden {
   overflow: hidden !important;
+}
+
+.modal-sm {
+  width: 300px !important;
 }
 /*# sourceMappingURL=style.css.map */
