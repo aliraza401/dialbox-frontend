@@ -459,7 +459,7 @@
           <div class="col-md-8 col-lg-9">
             <div class="sec-prod mt-5">
               <h3 class="text-sec">Popular Products</h3>
-              <p class="mt-2 text-pri fs16 mb-0 cursor-pointer">Add Product +</p>
+              <a class="mt-2 text-pri fs16 mb-0 cursor-pointer tdn " href="add_product.html" >Add Product +</a>
               <div class="bus-profile-swiper-threee mt-2">
                 <div class="mb-4 mb-md-0">
                   <div class="mini-card rounded-0 p-3 border text-center">
@@ -655,7 +655,8 @@
             </div>
 
             <div class="sec-faqs mt-5">
-              <h3 class="text-sec text-center after-margin-auto mb-3">Frequently Asked Question</h3>
+              <h3 class="text-sec text-center after-margin-auto mb-0">Frequently Asked Question</h3>
+              <p class="mt-2 text-pri fs16 mn-0 text-center mb-4 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModalFAQ" >Add Question +</p>
 
               <button class="accordion shadow-sm text-pri mb-2 mt-2">Section 1</button>
               <div class="panel">
@@ -775,7 +776,7 @@
       <div class="modal-dialog modal-sm  modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Edit Business Name<h5>
+            <h5 class="modal-title" id="exampleModalLabel">Edit Business Name<h5> 
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body py-0">
@@ -786,6 +787,32 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn bg-pri text-white">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalFAQ" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add FAQ's<h5> 
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-0">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label mt-2">Add Question</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Add Answer</label>
+                <textarea type="password" class="form-control" rows="5" id="exampleInputPassword1"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn bg-pri text-white">Submit</button>
           </div>
         </div>
       </div>

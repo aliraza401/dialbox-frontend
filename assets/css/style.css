@@ -436,6 +436,10 @@
   border-color: #397aab !important;
 }
 
+.tdn {
+  text-decoration: none !important;
+}
+
 .sec-services-index .mini-card {
   text-decoration: none !important;
   color: black;
@@ -1347,10 +1351,6 @@
   margin-bottom: 2rem !important;
 }
 
-.sec-main-business-profile .sec-faqs h3 {
-  margin-bottom: 2rem !important;
-}
-
 .sec-main-business-profile .sec-faqs h3::after {
   content: " ";
   display: block;
@@ -1968,6 +1968,7 @@
 .sec-1-packages .mini-card {
   width: 320px;
   margin: auto;
+  border: 1px solid #707070 !important;
 }
 
 .sec-1-packages .mini-card .back_img {
@@ -1982,7 +1983,7 @@
   border: 3px solid white;
   width: 170px;
   height: 50px;
-  font-size: 18px;
+  font-size: 20px !important;
 }
 
 .sec-1-packages .mini-card .back_img .p-abs-1 {
@@ -2011,7 +2012,30 @@
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  font-size: 18px;
+  font-size: 18px !important;
+}
+
+.buy-now-bronze {
+  background: #095ba2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#095ba2), to(#07467d));
+  background: linear-gradient(180deg, #095ba2 0%, #07467d 100%);
+}
+
+.strike {
+  text-decoration: line-through !important;
+}
+
+.strikediag {
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(47.75%, transparent), color-stop(49.5%, currentColor), color-stop(50.5%, currentColor), color-stop(52.25%, transparent));
+  background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);
+}
+
+.withpadding {
+  padding: 0 0.15em;
+}
+
+.text-v-small {
+  font-size: 9px !important;
 }
 
 .sec-2-packages {
@@ -2019,18 +2043,39 @@
 }
 
 .sec-2-packages .mini-card {
-  border-left: 5px solid white;
+  border-right: 5px solid white;
   padding-left: 10px;
 }
 
-.sec-2-packages .mini-card .one .img_cunt {
-  width: 100px;
+@media (max-width: 600px) {
+  .sec-2-packages .mini-card {
+    border-right: 0px solid white;
+  }
+}
+
+.sec-2-packages .mini-card .one .img_cunt img {
+  height: 60px;
+  width: auto !important;
 }
 
 .sec-2-packages .mini-card p {
-  font-size: 22px;
+  font-size: 20px !important;
   font-weight: bold;
   padding-left: 10px;
+}
+
+.sec-2-packages .mini-card .two ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.sec-2-packages .mini-card .two ul li {
+  margin-bottom: 8px;
+}
+
+.sec-2-packages .mini-card .two ul .list-img {
+  width: 18px;
+  height: auto;
 }
 
 body {
@@ -2348,7 +2393,7 @@ body {
 }
 
 .sec-1-home-slider .sec-slider.desktop .singleItem * {
-  height: 100%;
+  height: 100% !important;
 }
 
 .sec-1-home-slider .sec-slider.desktop .back_img {
@@ -2493,7 +2538,7 @@ body {
 }
 
 .sec-1-home-slider .sec-slider.mobile .singleItem * {
-  height: 100%;
+  height: 100% !important;
 }
 
 .sec-1-home-slider .sec-slider.mobile .back_img {
@@ -2655,6 +2700,150 @@ body {
   border-bottom: 0px solid white;
 }
 
+.fs16 {
+  font-size: 20px !important;
+}
+
+.sec-1-add-advertisement .p-abs-1 {
+  top: 50% !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+}
+
+.sec-1-add-advertisement .p-abs-1 .btn0main {
+  font-size: 20px !important;
+}
+
+.sec-1-add-advertisement .p-abs-1 h1 {
+  font-size: 36px !important;
+}
+
+.btn-bg-white-add-business {
+  background-color: white !important;
+  color: #397aab !important;
+  border-radius: 20px !important;
+  text-decoration: none !important;
+  padding: 7px 15px;
+}
+
+.sec-2-add-advertisement .lg-card {
+  background-color: #f2f2f2 !important;
+  border-radius: 0px !important;
+  border-color: silver;
+}
+
+.sec-2-add-advertisement .sec-banner label {
+  padding: 7px 10px;
+  background: #397aab;
+  display: table;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sec-2-add-advertisement .sec-banner label img {
+  width: 15px;
+  height: 15px;
+}
+
+.sec-2-add-advertisement .sec-banner input[type="file"] {
+  display: none;
+}
+
+.sec-banner-image label {
+  padding: 7px 10px;
+  background: #397aab;
+  display: table;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sec-banner-image label img {
+  width: 15px;
+  height: 15px;
+}
+
+.sec-banner-image input[type="file"] {
+  display: none;
+}
+
+.long-card-ratings {
+  border-radius: 0px;
+  margin-top: 10px;
+}
+
+.long-card-ratings .one {
+  padding: 3px;
+}
+
+.long-card-ratings .two {
+  padding: 3px;
+  font-size: 15px !important;
+}
+
+.long-card-ratings .two img,
+.long-card-ratings .two i {
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
+}
+
+.long-card-ratings-sm {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+
+.long-card-ratings-sm * {
+  font-size: 13px !important;
+}
+
+.long-card-ratings-sm .one {
+  padding: 3px;
+}
+
+.long-card-ratings-sm .two {
+  padding: 3px;
+  font-size: 15px !important;
+}
+
+.long-card-ratings-sm .two img,
+.long-card-ratings-sm .two i {
+  width: 15px;
+  height: 15px;
+  margin-right: 2px;
+}
+
+.long-card-ratings-sm-sm {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+
+.long-card-ratings-sm-sm * {
+  font-size: 11px !important;
+}
+
+.long-card-ratings-sm-sm .one {
+  padding: 3px;
+}
+
+.long-card-ratings-sm-sm .two {
+  padding: 3px;
+  font-size: 15px !important;
+}
+
+.long-card-ratings-sm-sm .two img,
+.long-card-ratings-sm-sm .two i {
+  width: 12px;
+  height: 12px;
+  margin-right: 2px;
+}
+
 body p * {
   font-size: 15px !important;
 }
@@ -2724,7 +2913,8 @@ body p * {
     background-position: left;
   }
   .sec-1-category .back_img .p-abs-1 {
-    left: 25%;
+    left: 50%;
+    text-align: center;
   }
   .sec-2-packages .mini-card {
     border-left: 0px solid white;
@@ -2732,6 +2922,24 @@ body p * {
   .sec-1-banner .list-btn- {
     font-size: 15px !important;
     font-weight: 500 !important;
+  }
+  .sec-slider.mobile .p-abs-11 {
+    top: 1% !important;
+  }
+  .sec-slider.mobile .p-abs-11 .input-group-text, .sec-slider.mobile .p-abs-11 .one, .sec-slider.mobile .p-abs-11 .two {
+    height: 25px !important;
+  }
+  .sec-slider.mobile .p-abs-11 .two {
+    width: 45px !important;
+  }
+  .sec-slider.mobile .p-abs-11 .one {
+    width: 8% !important;
+  }
+  .sec-slider.mobile .p-abs-22 {
+    top: 76 !important;
+  }
+  .sec-slider.mobile .p-abs-22 .list-btn- {
+    font-size: 11px !important;
   }
 }
 
@@ -2780,6 +2988,23 @@ body p * {
   .sec-main-business-profile .sec-prod .mini-card .back_img {
     height: 200px;
   }
+}
+
+.sec-2-add-product .lg-card {
+  background-color: #efefef !important;
+  border-color: #747474;
+}
+
+.label-add-priduct-file {
+  background-color: white !important;
+  border: 1px solid lightgray !important;
+}
+
+.label-add-priduct-file .banner-img-add-product {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  opacity: 0.35;
 }
 
 @media (max-width: 1199.98px) {
@@ -2850,6 +3075,12 @@ body p * {
 @media (min-width: 1800px) {
   .sec-1-banner .back_img {
     height: 900px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .sec-1-home-slider .sec-slider.mobile .p-abs-22 {
+    top: 76% !important;
   }
 }
 
