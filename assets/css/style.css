@@ -440,6 +440,212 @@
   text-decoration: none !important;
 }
 
+.fs18 {
+  font-size: 18px !important;
+}
+
+.sec-2-messenger .upper-row .input-group-text {
+  border: 1px solid #397aab;
+}
+
+.sec-2-messenger .main-row {
+  /* Optional: show position indicator in red */
+}
+
+.sec-2-messenger .main-row ::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+.sec-2-messenger .main-row ::-webkit-scrollbar-thumb {
+  background: #397aab;
+}
+
+.sec-2-messenger .main-row .LEFT nav .btn-check:focus + .btn,
+.sec-2-messenger .main-row .LEFT nav .btn:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0rem transparent !important;
+          box-shadow: 0 0 0 0rem transparent !important;
+}
+
+.sec-2-messenger .main-row .LEFT nav .nav-tabs {
+  background-color: #6c757d !important;
+}
+
+.sec-2-messenger .main-row .LEFT nav .nav-tabs .active {
+  background-color: #397aab !important;
+}
+
+.sec-2-messenger .main-row .left {
+  border: 1px solid lightgray;
+  border-radius: 0px;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.sec-2-messenger .main-row .left .mini-card.Active {
+  background-color: #397aab !important;
+}
+
+.sec-2-messenger .main-row .left .mini-card.Active * {
+  color: white !important;
+}
+
+.sec-2-messenger .main-row .left .mini-card.Active .number-coutn {
+  background-color: white !important;
+  color: #397aab !important;
+}
+
+.sec-2-messenger .main-row .left .mini-card {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.sec-2-messenger .main-row .left .mini-card .lead {
+  font-size: 18px !important;
+}
+
+.sec-2-messenger .main-row .left .mini-card .img-container {
+  border: 2px solid lightgray;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 85px;
+}
+
+.sec-2-messenger .main-row .left .mini-card .number-coutn {
+  font-size: 14px;
+}
+
+.sec-2-messenger .main-row .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid lightgray;
+  border-radius: 0px;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 600px;
+  position: relative;
+}
+
+.sec-2-messenger .main-row .right .border {
+  border: 2px solid lightgray;
+}
+
+.sec-2-messenger .main-row .right .two {
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+  right: 1%;
+}
+
+.sec-2-messenger .main-row .right .two .long-card img {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.sec-2-messenger .main-row .right .two .long-card .i2 {
+  width: 18px;
+  height: 18px;
+}
+
+.sec-2-messenger .main-row .right .two .img-send {
+  width: 42px;
+  height: 42px;
+}
+
+.sec-2-messenger .main-row .right .two .ooO {
+  width: 93% !important;
+}
+
+.sec-2-messenger .main-row .right .one {
+  overflow-y: scroll;
+  margin-bottom: 50px;
+}
+
+.sec-2-messenger .main-row .right .one .incoming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.sec-2-messenger .main-row .right .one .incoming .back_img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 65px;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+}
+
+.sec-2-messenger .main-row .right .one .incoming .msg {
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  width: 80%;
+}
+
+.sec-2-messenger .main-row .right .one .time {
+  font-size: 12px !important;
+  text-align: right;
+}
+
+.sec-2-messenger .main-row .right .one .outgoing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.sec-2-messenger .main-row .right .one .outgoing .msg {
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  width: 93%;
+}
+
+.fs12 {
+  font-size: 12px !important;
+}
+
+.shadow-sm {
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.border-none {
+  border-width: 0px !important;
+}
+
 .sec-services-index .mini-card {
   text-decoration: none !important;
   color: black;
