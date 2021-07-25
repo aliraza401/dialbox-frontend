@@ -88,7 +88,42 @@
         <div id="mySidenav" class="sidenav shadow">
           <a href="javascript:void(0)" class="closebtn" id="closeBtnn" onclick="closeNav()">&times; </a>
 
-          <div class="NavMobileA">
+
+
+          <a href="#about">DISCUSSION FORM</a>
+          <button class="dropdown-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" fill="rgba(255,255,255,1)"/></svg>
+            INDUSTRIES 
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Accommodation</a>
+            <a href="#">Arts, Entertainment</a>
+            <a href="#">Fishing and Hunting</a>
+            <a href="#">Accommodation</a>
+            <a href="#">Arts, Entertainment</a>
+            <a href="#">Fishing and Hunting</a>
+            <a href="#">Accommodation</a>
+            <a href="#">Arts, Entertainment</a>
+            <a href="#">Fishing and Hunting</a>
+            <a href="#">Accommodation</a>
+            <a href="#">Arts, Entertainment</a>
+            <a href="#">Fishing and Hunting</a>
+          </div>
+          <a href="#services">ADVERTISEMENT</a>
+          <a href="#services">HOW IT WORKS</a>
+
+          <a href="#clients"> REGISTER NOW </a>
+
+          <button class="dropdown-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" fill="rgba(255,255,255,1)"/></svg>
+            EN 
+          </button>
+          <div class="dropdown-container">
+            <a href="#">English</a>
+            <a href="#">Urdu</a>
+          </div>
+
+          <!-- <div class="NavMobileA">
             <div class="back_img" style="background-image: url(assets/img/face_img.jpeg)"></div>
             <h5 class="name mt-3">Ali Raza</h5>
             <p class="lead">Askari 14, Rawalpindi</p>
@@ -160,7 +195,7 @@
                 Logout
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
         <span class="d-block d-lg-none" style="cursor: pointer" onclick="openNav()">
           <div class="d-flex mt-2 justify-content-between align-items-center">
@@ -190,7 +225,6 @@
                   <button data-bs-toggle="modal" data-bs-target="#exampleModalLogin" data-bs-dismiss="modal" aria-label="Close" class="btn w-75 mx-2 bg-white w-90 mb-2 shadow rounded-0">Sign In</button>
                 </div>
                 <div>
-                  <button class="btn bg-white w-75 mx-2 w-90 shadow rounded-0">Sign Up</button>
                   <button disabled class="btn btn-secondary w-75 mx-2 w-90 shadow rounded-0">Sign Up</button>
                 </div>
               </div>
@@ -1018,6 +1052,23 @@
       function slickRight() {
         $(".singleItem").slick("slickNext");
       }
+
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+        });
+      }
+
     </script>
   </body>
 </html>

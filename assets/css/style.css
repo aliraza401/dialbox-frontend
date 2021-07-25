@@ -140,6 +140,17 @@
   background-size: 100% 100%;
 }
 
+#mySidenav {
+  /* Fixed sidenav, full height */
+  /* Style the sidenav links and the dropdown button */
+  /* On mouse-over */
+  /* Main content */
+  /* Add an active class to the active dropdown button */
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  /* Optional: Style the caret down icon */
+  /* Some media queries for responsiveness */
+}
+
 #mySidenav a {
   font-size: 18px !important;
 }
@@ -183,6 +194,66 @@
 
 #mySidenav .NavMobileA ul li svg {
   margin-right: 10px;
+}
+
+#mySidenav .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+#mySidenav .sidenav a, #mySidenav .dropdown-btn {
+  text-decoration: none;
+  display: block;
+  border: none;
+  background: none;
+  color: white !important;
+  padding: 12px 8px 12px 32px !important;
+  font-size: 18px !important;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+#mySidenav .main {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 20px;
+  /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+#mySidenav .active {
+  color: white;
+}
+
+#mySidenav .dropdown-container {
+  display: none;
+  background-color: #5981a0;
+  padding-left: 8px;
+  max-height: 300px !important;
+  overflow-y: scroll;
+}
+
+#mySidenav .fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+  #mySidenav .sidenav {
+    padding-top: 15px;
+  }
+  #mySidenav .sidenav a {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-height: 450px) {
