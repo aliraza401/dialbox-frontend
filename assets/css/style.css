@@ -50,6 +50,15 @@
   padding-top: 60px;
 }
 
+.sec-header .sidenav-right {
+  left: unset;
+  right: 0;
+}
+
+.sec-header .margin32 {
+  margin: 8px 8px 8px 32px;
+}
+
 .sec-header .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
