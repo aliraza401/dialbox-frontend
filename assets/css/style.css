@@ -3289,71 +3289,53 @@ body {
   border-bottom: 2px solid darkgray;
 }
 
-.sec-main-user-profile .sub-sec-4 .two .aaccordion {
-  cursor: pointer;
-  background-color: transparent !important;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
 .sec-main-user-profile .sub-sec-4 .two .acc-dev {
-  border-bottom: 1px solid lightgray !important;
+  border-bottom: 1px solid lightgray;
+  position: relative !important;
+  margin-bottom: 15px;
+  word-break: break-all !important;
 }
 
-.sec-main-user-profile .sub-sec-4 .two .panel {
-  padding: 0 18px;
-  display: none;
-  background-color: transparent;
-  overflow: hidden;
+.sec-main-user-profile .sub-sec-4 .two .acc-dev h4 {
+  margin-right: 20px;
+}
+
+.sec-main-user-profile .sub-sec-4 .two .acc-dev .abs {
+  position: absolute !important;
+  top: 0px;
+  right: 0px;
 }
 
 .sec-main-user-profile .sub-sec-4 .two .sec {
-  position: relative;
+  border-bottom: 1px solid #e4e4e4;
+  position: relative !important;
   margin-bottom: 15px;
 }
 
 .sec-main-user-profile .sub-sec-4 .two .sec .abs {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  border-bottom: 1px solid #f2f2f2 !important;
-}
-
-.sec-main-user-profile .sub-sec-4 .two .danel {
-  padding: 0 18px;
-  background-color: transparent;
-  overflow: hidden;
-  position: relative;
-}
-
-.sec-main-user-profile .sub-sec-4 .two .danel .abs {
-  position: absolute;
+  position: absolute !important;
   top: 0px;
   right: 0px;
 }
 
-.sec-main-user-profile .sub-sec-4 .two .aaccordion:after {
-  content: "\02795";
-  /* Unicode character for "plus" sign (+) */
-  font-size: 10px !important;
-  color: #777;
-  float: right;
-  margin-left: 5px;
+.sec-main-user-profile-2 .btn-pri-sec-user-profile {
+  width: 120px;
 }
 
-.sec-main-user-profile .sub-sec-4 .two .active:after {
-  content: "\2796";
-  /* Unicode character for "minus" sign (-) */
+.bb-none {
+  border-bottom: none !important;
 }
 
 .fs15 {
   font-size: 15px !important;
+}
+
+.fs28 {
+  font-size: 28px !important;
+}
+
+.modal {
+  z-index: 10600;
 }
 
 .modal-edit-delete-popper .btn {
@@ -3379,8 +3361,16 @@ body {
   font-size: 12px !important;
 }
 
+.modal-dialog {
+  margin: auto !important;
+}
+
 body p * {
   font-size: 15px !important;
+}
+
+.w120px {
+  width: 120px !important;
 }
 
 @media (max-width: 575.98px) {
