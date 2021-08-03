@@ -3365,6 +3365,91 @@ body {
   margin: auto !important;
 }
 
+.sec-1-all-services h2::after {
+  content: " ";
+  display: block;
+  background-color: white;
+  width: 100px;
+  border: 2px solid #a32e2e !important;
+  border-radius: 4px;
+  margin: auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.sec-1-all-services .sec-main {
+  background-color: #f5f5f5 !important;
+}
+
+.sec-1-all-services .sec-main .row > * {
+  padding-bottom: calc(var(--bs-gutter-x));
+}
+
+.sec-1-all-services .sec-main .mini-card {
+  text-decoration: none !important;
+  color: black;
+  border-width: 1px !important;
+  border-radius: 0px !important;
+  padding-top: 1.8rem !important;
+  padding-bottom: 1.8rem !important;
+  background-color: white !important;
+}
+
+.sec-1-all-services .pagination .page-item.active {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec-1-all-services .pagination .page-item.active .page-link {
+  background-color: #397aab !important;
+  color: white !important;
+}
+
+.sec-1-all-products .mini-card {
+  background-color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+}
+
+.sec-1-all-products .mini-card .back_img {
+  height: 220px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: lightgray !important;
+  border-width: 2px !important;
+}
+
+.sec-1-all-products .mini-card .back_img h5 {
+  font-size: 1.1rem !important;
+}
+
+.border-none {
+  border-width: 0px !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
 body p * {
   font-size: 15px !important;
 }
