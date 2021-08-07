@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialbox</title>
+
+    <!-- css imports -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Fonts ROBOTO -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section class="sec-header sticky-top bg-white shadow">
+      <div class="container px-md-1">
+        <!-- Nav Desktop -->
+        <nav class="navbar navbar-expand-lg px-0 navbar-light bg-transparent d-none d-lg-block py-0">
+          <div class="container px-0">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/logo@1X.png" class="img img-fluid header-logo" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active mb-0" aria-current="page" href="discussion_form.html">DISCUSSION FORM</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> INDUSTRIES </a>
+                  <ul class="dropdown-menu new-drop-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <span class="rounded-0 fs14" href="#">
+                        <input type="text" placeholder="Search in Industry" class="rounded-0 form-control border-none" />
+                      </span>
+                    </li>
+                    <li><a class="dropdown-item fs14" href="#">Accommodation</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Food Services</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Arts, Entertainment</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Agriculture, Forestry</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Fishing and Hunting</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Educational Services</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Construction</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Information</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Fishing and Hunting</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Educational Services</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Construction</a></li>
+                    <li><a class="dropdown-item fs14" href="#">Information</a></li>
+                    <li><a class="dropdown-item fs14" href="#">See All</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ADVERTISMENT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HOW IT WORKS</a>
+                </li>
+              </ul>
+              <div class="nav-right d-flex align-items-center">
+                <span class="p-rel heacaer-notice">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M12 2c4.97 0 9 4.043 9 9.031V20H3v-8.969C3 6.043 7.03 2 12 2zM9.5 21h5a2.5 2.5 0 1 1-5 0z" fill="rgba(57, 122, 171,1)" />
+                  </svg>
+                </span>
+                <span class="p-rel heacaer-notice">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z" fill="rgba(57, 122, 171,1)" />
+                  </svg>
+                </span>
+                <img src="assets/img/header_user.png" class="img w-auto height-35 user_img" alt="" />
+
+                <span class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle height-35 border border-2px border-color-pri px-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EN </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Urdu</a></li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile Nav -->
+        <div id="mySidenav" class="sidenav shadow">
+          <a href="javascript:void(0)" class="closebtn" id="closeBtnn" onclick="closeNav()">&times; </a>
+
+          <div class="NavMobileA">
+            <div class="back_img" style="background-image: url(assets/img/face_img.jpeg)"></div>
+            <h5 class="name mt-3">Ali Raza</h5>
+            <p class="lead">Askari 14, Rawalpindi</p>
+
+            <div class="btn rounded bg-sec text-white w-100 mb-2">Register Now</div>
+
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M13 14.062V22H4a8 8 0 0 1 9-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm5.793 6.914l3.535-3.535 1.415 1.414-4.95 4.95-3.536-3.536 1.415-1.414 2.12 2.121z" fill="rgba(255,255,255,1)" />
+                </svg>
+                Profile
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M12 2c4.97 0 9 4.043 9 9.031V20H3v-8.969C3 6.043 7.03 2 12 2zM9.5 21h5a2.5 2.5 0 1 1-5 0z" fill="rgba(255,255,255,1)" />
+                </svg>
+                Notification
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h16V5H4zm8 10h6v2h-6v-2zm-3.333-3L5.838 9.172l1.415-1.415L11.495 12l-4.242 4.243-1.415-1.415L8.667 12z" fill="rgba(255,255,255,1)" />
+                </svg>
+                Advice
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M5.33 3.271a3.5 3.5 0 0 1 4.254 4.963l10.709 10.71-1.414 1.414-10.71-10.71a3.502 3.502 0 0 1-4.962-4.255L5.444 7.63a1.5 1.5 0 1 0 2.121-2.121L5.329 3.27zm10.367 1.884l3.182-1.768 1.414 1.414-1.768 3.182-1.768.354-2.12 2.121-1.415-1.414 2.121-2.121.354-1.768zm-6.718 8.132l1.414 1.414-5.303 5.303a1 1 0 0 1-1.492-1.327l.078-.087 5.303-5.303z" fill="rgba(255,255,255,1)" />
+                </svg>
+                How it works
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M22 17.002a6.002 6.002 0 0 1-4.713 5.86l-.638-1.914A4.003 4.003 0 0 0 19.465 19H17a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h2.938a8.001 8.001 0 0 0-15.876 0H7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5C2 6.477 6.477 2 12 2s10 4.477 10 10V17.002z" fill="rgba(255,255,255,1)" />
+                </svg>
+                Customer care
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M13.576 17.271l-5.11-2.787a3.5 3.5 0 1 1 0-4.968l5.11-2.787a3.5 3.5 0 1 1 .958 1.755l-5.11 2.787a3.514 3.514 0 0 1 0 1.458l5.11 2.787a3.5 3.5 0 1 1-.958 1.755z" fill="rgba(255,255,255,1)" />
+                </svg>
+                Share
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="none" d="M0 0H24V24H0z" />
+                  <path d="M9 7.539L15 21.539 18.659 13 23 13 23 11 17.341 11 15 16.461 9 2.461 5.341 11 1 11 1 13 6.659 13z" fill="rgba(255,255,255,1)" />
+                </svg>
+                Rate it
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M8.686 4l2.607-2.607a1 1 0 0 1 1.414 0L15.314 4H19a1 1 0 0 1 1 1v3.686l2.607 2.607a1 1 0 0 1 0 1.414L20 15.314V19a1 1 0 0 1-1 1h-3.686l-2.607 2.607a1 1 0 0 1-1.414 0L8.686 20H5a1 1 0 0 1-1-1v-3.686l-2.607-2.607a1 1 0 0 1 0-1.414L4 8.686V5a1 1 0 0 1 1-1h3.686zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="rgba(255,255,255,1)" />
+                </svg>
+                Settings
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M5 22a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5zm10-6l5-4-5-4v3H9v2h6v3z" fill="rgba(255,255,255,1)" />
+                </svg>
+                Logout
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span class="d-block d-lg-none" style="cursor: pointer" onclick="openNav()">
+          <div class="d-flex mt-2 justify-content-between align-items-center">
+            <span class="fs20">&#9776;</span>
+            <span><img src="assets/img/logo@1X.png" class="img img-fluid logo-mobile" alt="" /></span>
+            <span>
+              <img src="assets/img/header_user.png" class="img img-fluid user_img_mobile" alt="" />
+            </span>
+          </div>
+        </span>
+      </div>
+    </section>
+
+    <div class="sec-1-category">
+      <div class="container-fluid px-0">
+        <div class="back_img" style="background-image: url('assets/img/pb@1X.png')">
+          <div class="p-abs-1">
+            <!-- <h1 class="text-pri display-4 fw-bold">Grow Your <br> Business</h1> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-2-messenger mt-sec">
+      <div class="container">
+        <div class="row main-row">
+          <div class="col-md-4 LEFT">
+            <div class="mb-4 bus-user-btns d-flex">
+              <a href="messeger_user.html" class="btn bg-pri text-white  w-50 btn-block bgn-lg text-white rounded-0 d-block py-2">User Messages</a>
+              <a href="messeger_business.html" class="btn btn-secondary w-50 btn-block bgn-lg text-white rounded-0 d-block py-2">Business Massages</a>
+            </div>
+
+            <div>
+              <div>
+                <div class="left">
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                      <div class="row g-0 mini-card align-items-center shadow">
+                        <div class="col-3">
+                          <div class="img-container" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        </div>
+                        <div class="col-6 ps-2">
+                          <p class="text-pri fw-600 lead mb-2">John Doe</p>
+                          <p>Ok Thanks Dude!!</p>
+                        </div>
+                        <div class="col-3 text-right">
+                          <p class="text-pri mb-2">12:00 pm</p>
+                          <span class="m-0 px-2 py-1 number-coutn text-white rounded-circle bg-pri">2</span>
+                        </div>
+                      </div>
+                    </button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                      <div class="row g-0 mini-card align-items-center shadow">
+                        <div class="col-3">
+                          <div class="img-container" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        </div>
+                        <div class="col-6 ps-2">
+                          <p class="text-pri fw-600 lead mb-2">John Doe</p>
+                          <p>Ok Thanks Dude!!</p>
+                        </div>
+                        <div class="col-3 text-right">
+                          <p class="text-pri mb-2">12:00 pm</p>
+                          <span class="m-0 px-2 py-1 number-coutn text-white rounded-circle bg-pri">2</span>
+                        </div>
+                      </div>
+                    </button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                      <div class="row g-0 mini-card align-items-center shadow">
+                        <div class="col-3">
+                          <div class="img-container" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        </div>
+                        <div class="col-6 ps-2">
+                          <p class="text-pri fw-600 lead mb-2">John Doe</p>
+                          <p>Ok Thanks Dude!!</p>
+                        </div>
+                        <div class="col-3 text-right">
+                          <p class="text-pri mb-2">12:00 pm</p>
+                          <span class="m-0 px-2 py-1 number-coutn text-white rounded-circle bg-pri">2</span>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row py-4 pt-0 upper-row">
+              <div class="col-md-8">
+                <div class="input-group">
+                  <span class="input-group-text rounded-0 bg-pri border-1" id="basic-addon1"> <img src="assets/img/search.png" style="width: 26px" class="img img-fluid" alt="" /> </span>
+                  <input type="text" class="form-control rounded-0" placeholder="Search message" aria-label="Username" aria-describedby="basic-addon1" />
+                </div>
+              </div>
+              <div class="col-md-2">
+                <a href="" class="btn bg-pri btn-block bgn-lg text-white rounded-0 d-block py-2">Clear</a>
+              </div>
+              <div class="col-md-2">
+                <a href="" class="btn bg-pri btn-block bgn-lg text-white rounded-0 d-block py-2">Block</a>
+              </div>
+            </div>
+
+            <div class="right">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="one scroll_bottom">
+                    <div class="incoming pt-4 px-4">
+                      <div>
+                        <div class="back_img" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        <p class="text-secondary fs12 mb-0 text-center">12:00 pm</p>
+                      </div>
+                      <p class="p-3 msg mb-0 shadow-sm">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                    </div>
+
+                    <div class="outgoing-cont">
+                      <div class="outgoing pt-4 px-4">
+                        <p class="p-3 msg mb-0 shadow-sm bg-pri text-white">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                      </div>
+                      <p class="time text-secondary mb-0 pe-4">12:00 AM</p>
+                    </div>
+
+                    <div class="incoming pt-4 px-4">
+                      <div>
+                        <div class="back_img" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        <p class="text-secondary fs12 mb-0 text-center">12:00 pm</p>
+                      </div>
+                      <p class="p-3 msg mb-0 shadow-sm">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                    </div>
+
+                    <div class="outgoing-cont">
+                      <div class="outgoing pt-4 px-4">
+                        <p class="p-3 msg mb-0 shadow-sm bg-pri text-white">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                      </div>
+                      <p class="time text-secondary mb-0 pe-4">12:00 AM</p>
+                    </div>
+
+                    <div class="incoming pt-4 px-4">
+                      <div>
+                        <div class="back_img" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        <p class="text-secondary fs12 mb-0 text-center">12:00 pm</p>
+                      </div>
+                      <p class="p-3 msg mb-0 shadow-sm">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                    </div>
+
+                    <div class="outgoing-cont">
+                      <div class="outgoing pt-4 px-4">
+                        <p class="p-3 msg mb-0 shadow-sm bg-pri text-white">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                      </div>
+                      <p class="time text-secondary mb-0 pe-4">12:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="two d-flex justify-content-between">
+                    <div class="input-group mb-3 rounded-pill overflow-hidden shadow-sm ooO border long-card">
+                      <span class="input-group-text bg-white border-none p-2"> <img src="assets/img/imoji@1X.png" class="img img-fluid i1" alt="" /> </span>
+                      <input type="text" class="form-control border-none" placeholder="Text a Message" aria-label="Amount (to the nearest dollar)" />
+                      <span class="input-group-text bg-white border-none p-2"> <img src="assets/img/file@1X.png" alt="" class="img img-fluid i2" /> </span>
+                    </div>
+                    <img src="assets/img/NoPath - Copy@1X.png" class="img-send 022" alt="" />
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <div class="one scroll_bottom">
+                    <div class="incoming pt-4 px-4">
+                      <div>
+                        <div class="back_img" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        <p class="text-secondary fs12 mb-0 text-center">12:00 pm</p>
+                      </div>
+                      <p class="p-3 msg mb-0 shadow-sm">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                    </div>
+
+                    <div class="outgoing-cont">
+                      <div class="outgoing pt-4 px-4">
+                        <p class="p-3 msg mb-0 shadow-sm bg-pri text-white">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                      </div>
+                      <p class="time text-secondary mb-0 pe-4">12:00 AM</p>
+                    </div>
+
+                    <div class="incoming pt-4 px-4">
+                      <div>
+                        <div class="back_img" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        <p class="text-secondary fs12 mb-0 text-center">12:00 pm</p>
+                      </div>
+                      <p class="p-3 msg mb-0 shadow-sm">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                    </div>
+
+                    <div class="outgoing-cont">
+                      <div class="outgoing pt-4 px-4">
+                        <p class="p-3 msg mb-0 shadow-sm bg-pri text-white">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                      </div>
+                      <p class="time text-secondary mb-0 pe-4">12:00 AM</p>
+                    </div>
+
+                    <div class="incoming pt-4 px-4">
+                      <div>
+                        <div class="back_img" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        <p class="text-secondary fs12 mb-0 text-center">12:00 pm</p>
+                      </div>
+                      <p class="p-3 msg mb-0 shadow-sm">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                    </div>
+
+                    <div class="outgoing-cont">
+                      <div class="outgoing pt-4 px-4">
+                        <p class="p-3 msg mb-0 shadow-sm bg-pri text-white">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                      </div>
+                      <p class="time text-secondary mb-0 pe-4">12:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="two d-flex justify-content-between">
+                    <div class="input-group mb-3 rounded-pill overflow-hidden shadow-sm ooO border long-card">
+                      <span class="input-group-text bg-white border-none p-2"> <img src="assets/img/imoji@1X.png" class="img img-fluid i1" alt="" /> </span>
+                      <input type="text" class="form-control border-none" placeholder="Text a Message" aria-label="Amount (to the nearest dollar)" />
+                      <span class="input-group-text bg-white border-none p-2"> <img src="assets/img/file@1X.png" alt="" class="img img-fluid i2" /> </span>
+                    </div>
+                    <img src="assets/img/NoPath - Copy@1X.png" class="img-send 022" alt="" />
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <div class="one scroll_bottom">
+                    <div class="incoming pt-4 px-4">
+                      <div>
+                        <div class="back_img" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        <p class="text-secondary fs12 mb-0 text-center">12:00 pm</p>
+                      </div>
+                      <p class="p-3 msg mb-0 shadow-sm">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                    </div>
+
+                    <div class="outgoing-cont">
+                      <div class="outgoing pt-4 px-4">
+                        <p class="p-3 msg mb-0 shadow-sm bg-pri text-white">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                      </div>
+                      <p class="time text-secondary mb-0 pe-4">12:00 AM</p>
+                    </div>
+
+                    <div class="incoming pt-4 px-4">
+                      <div>
+                        <div class="back_img" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        <p class="text-secondary fs12 mb-0 text-center">12:00 pm</p>
+                      </div>
+                      <p class="p-3 msg mb-0 shadow-sm">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                    </div>
+
+                    <div class="outgoing-cont">
+                      <div class="outgoing pt-4 px-4">
+                        <p class="p-3 msg mb-0 shadow-sm bg-pri text-white">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                      </div>
+                      <p class="time text-secondary mb-0 pe-4">12:00 AM</p>
+                    </div>
+
+                    <div class="incoming pt-4 px-4">
+                      <div>
+                        <div class="back_img" style="background-image: url(assets/img/face_img.jpeg)"></div>
+                        <p class="text-secondary fs12 mb-0 text-center">12:00 pm</p>
+                      </div>
+                      <p class="p-3 msg mb-0 shadow-sm">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                    </div>
+
+                    <div class="outgoing-cont">
+                      <div class="outgoing pt-4 px-4">
+                        <p class="p-3 msg mb-0 shadow-sm bg-pri text-white">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et? sit amet consectetur adipisicing elit. Soluta placeat adipisci vitae asperiores error? Aliquam quibusdam molestiae harum magni nam?</p>
+                      </div>
+                      <p class="time text-secondary mb-0 pe-4">12:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="two d-flex justify-content-between">
+                    <div class="input-group mb-3 rounded-pill overflow-hidden shadow-sm ooO border long-card">
+                      <span class="input-group-text bg-white border-none p-2"> <img src="assets/img/imoji@1X.png" class="img img-fluid i1" alt="" /> </span>
+                      <input type="text" class="form-control border-none" placeholder="Text a Message" aria-label="Amount (to the nearest dollar)" />
+                      <span class="input-group-text bg-white border-none p-2"> <img src="assets/img/file@1X.png" alt="" class="img img-fluid i2" /> </span>
+                    </div>
+                    <img src="assets/img/NoPath - Copy@1X.png" class="img-send 022" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="sec-footer pt-5 mb-0 p">
+      <div class="footer-top">
+        <div class="container px-md-5">
+          <div class="row mb-4">
+            <div class="col-lg-6 border-roght- pe-md-5 mb-md-4 mb-lg-0">
+              <img src="assets/img/logo-white.png" class="img img-fluid mb-4 logo-white" alt="" />
+              <p class="mb-4 fs14 text-justify">Welcome to Dialbox, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and purchasing activities. We take pride in our iconic customer support number, +92 51 0000000 and the fact that we own a strong hold on local business information in Pakistan.</p>
+              <div class="input-group shadow-sm mb-3">
+                <input type="text" class="form-control fs14 border-sec" placeholder="Signup for dialbox updates" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                <span class="input-group-text bg-sec text-white px-3 fs14 border-sec" id="basic-addon2">Subscribe</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-4 my-md-0 ps-lg-4">
+              <h4>Our Company</h4>
+              <a href="">About Us</a>
+              <a href="">Careers</a>
+              <a href="">Press</a>
+              <a href="">Terms & Conditions</a>
+              <img src="assets/img/apple store.png" class="img img-fluid img-mobi mb-4 d-none d-md-inline-block" alt="" />
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4>Customer Care</h4>
+              <a href="">Help Center</a>
+              <a href="">Feedback</a>
+              <a href="">Report</a>
+              <a href="">Contact Us</a>
+              <img src="assets/img/goolge-play.png" class="img img-fluid img-mobi mb-4" alt="" />
+              <img src="assets/img/apple store.png" class="img img-fluid img-mobi mb-4 d-inline-block d-md-none" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-0">
+        <div class="container sec-bottom-footer">
+          <div class="d-block d-md-flex text-center justify-content-between py-4">
+            <span>© copyright Dialboxx 2021 . All Right Reserved</span>
+            <span>Powred by: XxxxXxxxxxx</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/jquery-3.6.0.slim.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+
+    <script>
+      $(document).ready(function () {
+        const slides = document.getElementsByClassName("scroll_bottom");
+
+        $(".scroll_bottom").each(function (index) {
+          slides[index].scrollTo(0, document.body.scrollHeight);
+        });
+      });
+    </script>
+  </body>
+</html>
