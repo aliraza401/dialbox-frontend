@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialbox</title>
+
+    <!-- css imports -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Fonts ROBOTO -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="sec-1-launching">
+      <div class="container">
+        <div class="mt-5 pt-5 text-center">
+          <img src="assets/img/logo@Lg.png" class="img img-fluid img-logos" alt="" />
+
+          <div class="sub-1 back-img mt-3" style="background-image: url(assets/img/Image\ 1@1X.png)">
+            <div class="counter-sec mt-4">
+              <div id="demo">
+                <div class="counter rounded shadow">
+                  <div class="d-flex align-items-center justify-content-center h-100">
+                    <div>
+                      <div class="pill rounded-pill rounded shadow bg-white text-pri">00</div>
+                      <h4 class="text-white mb-0 pt-2">Days</h4>
+                    </div>
+                    <div class="col">:</div>
+                    <div>
+                      <div class="pill rounded-pill rounded shadow bg-white text-pri">00</div>
+                      <h4 class="text-white mb-0 pt-2">Hours</h4>
+                    </div>
+                    <div class="col">:</div>
+                    <div>
+                      <div class="pill rounded-pill rounded shadow bg-white text-pri">00</div>
+                      <h4 class="text-white mb-0 pt-2">Minutes</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="mt-5 text-pri fw-300">BE THE FIRST TO KNOW OF OUR LAUNCH</h2>
+
+              <div class="input-group mb-3 mt-4 rounded-0">
+                <span class="input-group-text rounded-0 border text-white bg-pri" id="basic-addon1"> Subscribe </span>
+                <input type="email" class="form-control rounded-0" placeholder="Enter your email" aria-label="Username" aria-describedby="basic-addon1" />
+              </div>
+
+              <div class="social mt-5">
+                <img src="assets/img/yo.png" alt="" />
+                <img src="assets/img/in.png" alt="" />
+                <img src="assets/img/fb.png" alt="" />
+                <img src="assets/img/tw.png" alt="" />
+              </div>
+
+              <h2 class="mt-5 text-pri fw-bold">#Pakistan Ka Dialboxx</h2>
+
+              <h2 class="mt-2 text-sec fw-bold mt-3">JO BHI JAB BHI JAHAN BHI</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-0 mt-5">
+        <img src="assets/img/NoPath@1X.png" class="w-100 h-auto" alt="" />
+      </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.slim.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+
+    <script>
+      // Set the date you counting down to
+      var countDownDate = new Date("September 1, 2021 00:00:00").getTime();
+
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Output the result in an element with id="demo_date"
+        document.getElementById("demo").innerHTML = `   <div class="counter rounded shadow">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                  <div>
+                    <div class="pill rounded-pill rounded shadow bg-white text-pri">${days}</div>
+                    <h4 class="text-white mb-0 pt-2">Days</h4>
+                  </div>
+                  <div class="col">:</div>
+                  <div>
+                    <div class="pill rounded-pill rounded shadow bg-white text-pri">${hours}</div>
+                    <h4 class="text-white mb-0 pt-2">Hours</h4>
+                  </div>
+                  <div class="col">:</div>
+                  <div>
+                    <div class="pill rounded-pill rounded shadow bg-white text-pri">${minutes}</div>
+                    <h4 class="text-white mb-0 pt-2">Minutes</h4>
+                  </div>
+                </div>
+              </div>`;
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED TIMER";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
