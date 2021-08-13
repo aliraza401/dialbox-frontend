@@ -3653,7 +3653,7 @@ body {
 }
 
 .sec-1-launching .sub-1 .counter-sec .counter {
-  height: 200px;
+  height: 250px;
   background-color: #397aab;
 }
 
@@ -3691,6 +3691,11 @@ body {
   border-color: #397aab !important;
 }
 
+.sec-1-launching .sub-1 .counter-sec .input-group input:focus {
+  -webkit-box-shadow: 0 0 0 0 transparent;
+          box-shadow: 0 0 0 0 transparent;
+}
+
 .sec-1-launching .sub-1 .counter-sec .social img {
   width: 40px;
   height: 40px;
@@ -3704,7 +3709,7 @@ body {
 }
 
 .pakistan-animated-flag-abs .img-flag {
-  width: 250px;
+  width: 220px !important;
   height: auto;
   z-index: -1;
 }
