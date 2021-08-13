@@ -3683,7 +3683,7 @@ body {
 }
 
 .sec-1-launching .sub-1 .counter-sec .input-group {
-  width: 400px;
+  width: 500px;
   margin: auto;
 }
 
@@ -3695,6 +3695,18 @@ body {
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+
+.pakistan-animated-flag-abs {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.pakistan-animated-flag-abs .img-flag {
+  width: 250px;
+  height: auto;
+  z-index: -1;
 }
 
 .fw-300 {
@@ -3904,7 +3916,7 @@ body p * {
             justify-content: center;
   }
   .sec-1-launching .sub-1 .counter-sec .input-group {
-    width: 250px;
+    width: 85%;
     margin: auto;
   }
 }
