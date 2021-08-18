@@ -3718,6 +3718,29 @@ body {
   font-weight: 300 !important;
 }
 
+.sec-1-blog .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.sec-3-blog .mini-card .back_img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+
+.sec-3-blog .mini-card .back_img .overlay {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.sec-3-blog .mini-card .back_img .p-abs {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  color: white !important;
+}
+
 body p * {
   font-size: 15px !important;
 }
