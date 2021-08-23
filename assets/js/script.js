@@ -7,7 +7,7 @@ const closeNav = () => {
 };
 
 $('.one-time-slider').slick({
-	dots: true,
+	dots: false,
 	infinite: true,
 	arrows: false,
 	speed: 300,

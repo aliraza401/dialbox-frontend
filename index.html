@@ -39,30 +39,6 @@
                   <a class="nav-link active mb-0" aria-current="page" href="discussion_form.html">DISCUSSION FORM</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> INDUSTRIES </a>
-                  <ul class="dropdown-menu new-drop-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <span class="rounded-0 fs14" href="#">
-                        <input type="text" placeholder="Search in Industry" class="rounded-0 form-control border-none" />
-                      </span>
-                    </li>
-                    <li><a class="dropdown-item fs14" href="#">Accommodation</a></li>
-                    <li><a class="dropdown-item fs14" href="#">Food Services</a></li>
-                    <li><a class="dropdown-item fs14" href="#">Arts, Entertainment</a></li>
-                    <li><a class="dropdown-item fs14" href="#">Agriculture, Forestry</a></li>
-                    <li><a class="dropdown-item fs14" href="#">Fishing and Hunting</a></li>
-                    <li><a class="dropdown-item fs14" href="#">Educational Services</a></li>
-                    <li><a class="dropdown-item fs14" href="#">Construction</a></li>
-                    <li><a class="dropdown-item fs14" href="#">Information</a></li>
-                    <li><a class="dropdown-item fs14" href="#">Fishing and Hunting</a></li>
-                    <li><a class="dropdown-item fs14" href="#">Educational Services</a></li>
-                    <li><a class="dropdown-item fs14" href="#">Construction</a></li>
-                    <li><a class="dropdown-item fs14" href="#">Information</a></li>
-                    <li><a class="dropdown-item fs14" href="#">See All</a></li>
-                  </ul>
-                </li>
-
                 <li class="nav-item">
                   <a class="nav-link" href="#">ADVERTISMENT</a>
                 </li>
@@ -271,45 +247,9 @@
 
     <div class="sec-1-home-slider">
       <div class="container-fluid px-0">
-        <div class="sec-slider desktop d-none d-md-block">
-          <img src="assets/img/12.png" class="img w-100 h-100" alt="" />
 
-          <div class="p-abs-1">
-            <div class="singleItem w-100 h-100">
-              <div class="back_img_1" style="background-image: url(assets/img/desk.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/desk.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/desk.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/desk.jpg)"></div>
-            </div>
-          </div>
-
-          <div class="p-abs-2">
-            <div class="singleItem w-100 h-100">
-              <div class="back_img_1" style="background-image: url(assets/img/tab.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/tab.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/tab.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/tab.jpg)"></div>
-            </div>
-          </div>
-
-          <div class="p-abs-3">
-            <div class="singleItem w-100 h-100">
-              <div class="back_img_1" style="background-image: url(assets/img/mob.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/mob.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/mob.jpg)"></div>
-            </div>
-          </div>
-
-          <div class="p-abs-4">
-            <div class="singleItem w-100 h-100">
-              <div class="back_img_1" style="background-image: url(assets/img/mob.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/mob.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/mob.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/mob.jpg)"></div>
-            </div>
-          </div>
-
-          <div class="p-abs-11">
+        <div class="p-rel">
+          <div class="p-abs-11"> 
             <div class="input-group search-input mb-3">
               <span class="input-group-text igt1" id="basic-addon1"><img src="assets/img/map_pin.png" class="img img-fluid pin-img" alt="" /></span>
               <input type="text" class="form-control one" placeholder="Location" />
@@ -319,55 +259,49 @@
           </div>
 
           <div class="p-abs-22">
-            <a href="" class="btn bg-pri rounded-0 py-2 px-md-5 list-btn- text-white">LIST YOUR BUSINESS</a>
+            <span data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn bg-pri rounded-0 py-2 px-md-5 list-btn- text-white">LIST YOUR BUSINESS</span>
           </div>
-
+  
           <div class="p-abs-arrow-left" onclick="slickLeft()">
-            <!-- <i class="ri-arrow-left-circle-fill text-pri fsarrow-slider"></i> -->
-            <i class="ri-arrow-left-line  text-white fsarrow-slider"></i>
-          </div>
-
+            <i class="ri-arrow-left-s-line  text-white fsarrow-slider"></i>
+          </div>  
+  
           <div class="p-abs-arrow-right" onclick="slickRight()">
-            <!-- <i class="ri-arrow-right-circle-fill text-pri fsarrow-slider"></i> -->
-            <i class="ri-arrow-right-line  text-white fsarrow-slider"></i>
+            <i class="ri-arrow-right-s-line  text-white fsarrow-slider"></i>
+          </div>
+   
+  
+          <div class="industries-abs-slider rounded shadow d-none d-md-block">
+            <div class="sec-indus ">
+              <ul class="">
+                <li><a class="fs14" href="#"> <img src="assets/img/bank-line.png" alt=""> Accommodation</a></li>
+                <li><a class=" fs14" href="#"> <img src="assets/img/community-line.png" alt=""> Food Services</a></li>
+                <li><a class=" fs14" href="#"> <img src="assets/img/bank-line.png" alt=""> Arts, Entertainment</a></li>
+                <li><a class=" fs14" href="#"> <img src="assets/img/building-4-fill.png" alt=""> Agriculture, Forestry</a></li>
+                <li><a class=" fs14" href="#"> <img src="assets/img/bank-line.png" alt="">Fishing and Hunting</a></li>
+                <li><a class=" fs14" href="#"> <img src="assets/img/community-line.png" alt="">Educational Services</a></li>
+                <li><a class=" fs14" href="#"> <img src="assets/img/bank-line.png" alt="">Construction</a></li>
+                <li><a class=" fs14" href="#"> <img src="assets/img/bank-line.png" alt="">Information</a></li>
+                <li><a class=" fs14" href="#"> <img src="assets/img/bank-line.png" alt="">Fishing and Hunting</a></li>
+                <li><a class=" fs14" href="#"> <img src="assets/img/community-line.png" alt="">Educational Services</a></li>
+                <li><a class=" fs14" href="#"> <img src="assets/img/bank-line.png" alt="">Construction</a></li>
+                <li><a class=" fs14" href="#"> <img src="assets/img/bank-line.png" alt="">Information</a></li>
+                <li><a class=" fs14" href="#">See All</a></li>
+              </ul>
+            </div>
+          </div>
+  
+  
+          <div class="one-time-slider">
+            <div class="sec-slider desktop ">
+              <img src="https://akam.cdn.jdmagicbox.com/images/icontent/jdrwd_new/logistic-banner-web.jpg" class="img w-100 h-100" alt="" />
+            </div>
+            <div class="sec-slider desktop ">
+              <img src="https://akam.cdn.jdmagicbox.com/images/icontent/jdrwd_new/Flights.jpg" class="img w-100 h-100" alt="" />
+            </div>
           </div>
         </div>
 
-        <div class="sec-slider mobile d-block d-md-none">
-          <img src="assets/img/mobi.png" class="img w-100 h-sec-mob" alt="" />
-
-          <div class="p-abs-1">
-            <div class="singleItem w-100 h-100">
-              <div class="back_img_1" style="background-image: url(assets/img/desk.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/desk.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/desk.jpg)"></div>
-              <div class="back_img_1" style="background-image: url(assets/img/desk.jpg)"></div>
-            </div>
-          </div>
- 
-          <div class="p-abs-11">
-            <div class="input-group search-input mb-3">
-              <span class="input-group-text igt1" id="basic-addon1"><img src="assets/img/map_pin.png" class="img img-fluid pin-img" alt="" /></span>
-              <input type="text" class="form-control one" placeholder="Location" />
-              <input type="text" class="form-control two" placeholder="Search for anything, any where in Pakistan" />
-              <span class="input-group-text bg-pri"><img src="assets/img/search.png" class="img img-fluid search-img" alt="" /></span>
-            </div>
-          </div>
-
-          <div class="p-abs-22">
-            <a href="" class="btn bg-pri rounded-0 py-2 px-md-5 list-btn- text-white">LIST YOUR BUSINESS</a>
-          </div>
-
-          <div class="p-abs-arrow-left" onclick="slickLeft()">
-            <!-- <i class="ri-arrow-left-circle-fill text-pri fsarrow-slider"></i> -->
-            <i class="ri-arrow-left-line  text-white fsarrow-slider"></i>
-          </div>
-
-          <div class="p-abs-arrow-right" onclick="slickRight()">
-            <!-- <i class="ri-arrow-right-circle-fill text-pri fsarrow-slider"></i> -->
-            <i class="ri-arrow-right-line  text-white fsarrow-slider"></i>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -980,11 +914,11 @@
       });
 
       function slickLeft() {
-        $(".singleItem").slick("slickPrev");
+        $(".one-time-slider").slick("slickPrev");
       }
 
       function slickRight() {
-        $(".singleItem").slick("slickNext");
+        $(".one-time-slider").slick("slickNext");
       }
 
       /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
