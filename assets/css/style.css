@@ -4041,8 +4041,8 @@ NEW CSS
 .sec-1-home-slider .p-abs-11 {
   position: absolute;
   top: 10%;
-  right: 20%;
-  left: 39%;
+  right: 25%;
+  left: 30%;
   z-index: 5555;
 }
 
@@ -4097,6 +4097,10 @@ NEW CSS
   -webkit-transform: translate(-50%, 10px);
   transform: translate(-50%, 10px);
   z-index: 5554;
+}
+
+.sec-1-home-slider .p-abs-22 span {
+  font-size: 1.1rem !important;
 }
 
 .sec-1-home-slider .p-abs-arrow-left {
