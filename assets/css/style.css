@@ -4029,12 +4029,16 @@ li {
 
 
 
-/* new CSS BANNER */
-/* 
-NEW CSS
- */
 
- .sec-1-home-slider {
+
+/* new CSS BANNER */
+/* NEW CSS (home banner )*/
+
+
+
+
+
+.sec-1-home-slider {
   margin-bottom: 100px;
 }
 
@@ -4048,6 +4052,7 @@ NEW CSS
 
 .sec-1-home-slider .p-abs-11 .input-group .one {
   width: 120px;
+  background-color: white !important;
 }
 
 .sec-1-home-slider .p-abs-11 .input-group .one::-webkit-input-placeholder {
@@ -4068,6 +4073,7 @@ NEW CSS
 
 .sec-1-home-slider .p-abs-11 .input-group .two {
   width: 300px;
+  background-color: white !important;
 }
 
 .sec-1-home-slider .p-abs-11 .input-group .two::-webkit-input-placeholder {
