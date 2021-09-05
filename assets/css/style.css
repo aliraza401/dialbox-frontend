@@ -4435,12 +4435,62 @@ li {
   background: rgba(0, 0, 0, 0.8);
 }
 
-.sec-1-about .p-abs li{
+.sec-1-about .p-abs li {
   margin-bottom: 20px;
 }
 
 .sec-1-about .mini-card:hover .p-abs {
   display: block;
+}
+
+.sec-1-contact__Us .mini-card {
+  z-index: 99;
+  min-height: 420px;
+}
+
+@media screen and (min-width: 600px) {
+  .sec-1-contact__Us .mini-card {
+    margin-top: -80px;
+  }
+}
+
+.sec-2-faqs-page .accordion {
+  background-color: white;
+  color: #444;
+  border: 1px solid lightgray !important;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.sec-2-faqs-page .active,
+.accordion:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.sec-2-faqs-page .panel {
+  padding: 0 18px;
+  margin-top: 10px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.sec-2-faqs-page .accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.sec-2-faqs-page .active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 /*# sourceMappinURL=style.css.map */
