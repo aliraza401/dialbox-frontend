@@ -187,43 +187,90 @@
       </div>
     </section>
 
+
     <div class="sec-1-category sec-1-blog">
       <div class="container-fluid px-0">
-        <div class="back_img" style="background-image: linear-gradient( to top , #1588de, #fff); height: 230px; ">
+        <div class="back_img" style="background-image: linear-gradient( to top , #a32e2e, #fff); height: 230px; ">
           <div class="p-abs-1" style="position: absolute; left: 50%; transform: translate(-50%,-50%);" >
-            <h1 class="text-white fw-bold mb-3">FREQUENTLY ASKED QUESTIONS</h1>
+            <h1 class="text-white fw-bold mb-3">CAREERS FORM</h1>
         </div> 
         </div>
 
       </div>
     </div>
-    
+ 
 
 
-    <div class="sec-2-faqs-page">
-      <div class="container py-5 my-5">
-        <button class="accordion   shadow-sm">How Do I List My Business?</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
+    <div class="sec-2-add-buniness add-verification">
+      <div class="container mt-5" >
+        <div class="lg-card mb-5 py-4" style="background-color: #ebebeb; border-color: gray;">
+          <div class="overlay w-100 h-100" style="background-color: #ebebeb;">
 
-        <div class="mb-4"></div>
-        
-        <button class="accordion  shadow-sm">Can I Register Multiple Business?</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
 
-        <div class="mb-4"></div>
+            <div class="mx-md-5  px-md-5 pb-4 px-2 mt-5 " > 
+              <form action="" class="business-form" >
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="" class="" >Title: *  </label>
+                    <input type="text" class="form-control rounded-0" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="" class="" >Full Name * </label>
+                    <input type="text" class="form-control rounded-0" />
+                  </div>
+                </div>
 
-        
-        <button class="accordion   shadow-sm">Can I Register Multiple Business?</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">Choose Position *</label>
+                    <select name="" class="form-select rounded-0" id="">
+                      <option value="">Marketing Manager</option>
+                      <option value="">Helpline Representative</option>
+                      <option value="">Data Entry</option>
+                      <option value="">Internship</option>
+                    </select>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="" class="" >Email: *  </label>
+                    <input type="text" class="form-control rounded-0" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="" class="" >Contact No * </label>
+                    <input type="text" class="form-control rounded-0" />
+                  </div>
+                </div>
+
+ 
+
+                <div class="row  pb-0">
+                  <div class="col-md-8">
+                    <div class="row mb-0">
+                      <div class="col-md-4 sec-banner-image">
+                        <p class="mb-1" >Attach CV *
+                        </p>
+                        <label for="adgasg" class="" >Upload File  </label>
+                        <input type="file" id="adgasg" class="form-control rounded-0" placeholder="Enter Your Business ID...." />
+                      </div>
+                    </div>
+                  </div> 
+                </div> 
+
+                <div class=" text-center">
+                  <a href="" class="btn bg-sec text-white mb-4 rounded-0 py-2 fw-600 px-5">Submit</a>
+                </div>
+
+              </form>
+            </div>
+
+
+          </div>
         </div>
       </div>
     </div>
-
 
 
 
@@ -269,25 +316,6 @@
         </div>
       </div>
     </section>
-
-
-
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-      </script>
 
     <script src="assets/js/jquery-3.6.0.slim.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
